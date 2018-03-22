@@ -41,3 +41,4 @@ C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.cs
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll.licenses
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.pdb
+C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.csprojResolveAssemblyReference.cache
