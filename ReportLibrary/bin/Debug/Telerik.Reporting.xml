@@ -49,8 +49,12 @@
         </member>
         <member name="T:Telerik.Reporting.Drawing.Shapes.ShapeBase">
             <summary>
-            Base class for all shape types.
+            Base class for all shape types. The examples below illustrate how to inherit it when creating custom shapes
             </summary>
+            <code lang="C#" source="CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs" region="CustomShapeClassDeclarationSnippet" />
+            <code lang="VB" source="CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb" region="CustomShapeClassDeclarationSnippet" />
+            <code lang="C#" source="CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs" region="CreateCustomShapeSnippet" />
+            <code lang="VB" source="CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb" region="CreateCustomShapeSnippet" />
         </member>
         <member name="M:Telerik.Reporting.Drawing.Shapes.ShapeBase.#ctor">
             <summary>
@@ -1951,7 +1955,7 @@
             property is not set. 
             </value>
             <remarks>
-            Use the <B>BackColor</B> property to specify the background color 
+            Use the <B>BackgroundColor</B> property to specify the background color 
             of the page. This property is set using a 
             <see cref="T:System.Drawing.Color"/> object.
             </remarks>
@@ -3158,7 +3162,7 @@
             property is not set. 
             </value>
             <remarks>
-            Use the <B>BackColor</B> property to specify the background color 
+            Use the <B>BackgroundColor</B> property to specify the background color 
             of the report item. This property is set using a 
             <see cref="T:System.Drawing.Color"/> object.
             </remarks>
@@ -4602,12 +4606,12 @@
         </member>
         <member name="P:Telerik.Reporting.GraphAxis.Size">
             <summary>
-            Specifies the graph item's left position.
+            Specifies the Axis exact size.
             </summary>
         </member>
         <member name="P:Telerik.Reporting.GraphAxis.MinSize">
             <summary>
-            Specifies the graph item's left position.
+            Specifies the minimum Axis size.
             </summary>
         </member>
         <member name="P:Telerik.Reporting.GraphAxis.MaxSize">
@@ -5399,14 +5403,14 @@
             <summary>
             Gets or sets an expression that defines the <b>X</b> coordinate for the data points when in a 
             <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>; For a <see cref="T:Telerik.Reporting.PolarCoordinateSystem"/> gets or sets
-            the the <b>Angular</b> coordinate;
+            the <b>Angular</b> coordinate;
             </summary>
         </member>
         <member name="P:Telerik.Reporting.GraphSeries2D.Y">
             <summary>
             Gets or sets an expression that defines the <b>Y</b> coordinate for the data points when in a 
             <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>; For a <see cref="T:Telerik.Reporting.PolarCoordinateSystem"/> gets or sets
-            the the <b>Radial</b> coordinate;
+            the <b>Radial</b> coordinate;
             </summary>
         </member>
         <member name="P:Telerik.Reporting.GraphSeries2D.ArrangeMode">
@@ -5421,7 +5425,7 @@
         </member>
         <member name="P:Telerik.Reporting.AreaSeries.AreaStyle">
             <summary>
-            Gets the style applied to the area defined by the the data points of this series.
+            Gets the style applied to the area defined by the data points of this series.
             </summary>
         </member>
         <member name="P:Telerik.Reporting.AreaSeries.SmoothLine">
@@ -5453,7 +5457,7 @@
             <summary>
             Gets or sets an expression that defines the <b>X0</b> coordinate for the data points when in a 
             <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>; For <see cref="T:Telerik.Reporting.PolarCoordinateSystem"/> gets or sets
-            the the <b>angular</b> coordinate;
+            the <b>angular</b> coordinate;
             </summary>
             <remarks>
             If omitted, the BarSeries' data points start from the corresponding axis.
@@ -5463,7 +5467,7 @@
             <summary>
             Gets or sets an expression that defines the <b>Y0</b> coordinate for the data points when in a 
             <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>; For <see cref="T:Telerik.Reporting.PolarCoordinateSystem"/> gets or sets
-            the the <b>radial</b> coordinate;
+            the <b>radial</b> coordinate;
             </summary>
             <remarks>
             If omitted, the BarSeries' data points start from the corresponding axis.
@@ -5540,7 +5544,7 @@
             <summary>
             Gets or sets an expression that defines the <b>X0</b> coordinate for the data points when in a 
             <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>; For <see cref="T:Telerik.Reporting.PolarCoordinateSystem"/> gets or sets
-            the the <b>angular</b> coordinate;
+            the <b>angular</b> coordinate;
             </summary>
             <remarks>
             If omitted, the BarSeries' data points start from the corresponding axis.
@@ -5550,7 +5554,7 @@
             <summary>
             Gets or sets an expression that defines the <b>Y0</b> coordinate for the data points when in a 
             <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>; For <see cref="T:Telerik.Reporting.PolarCoordinateSystem"/> gets or sets
-            the the <b>radial</b> coordinate;
+            the <b>radial</b> coordinate;
             </summary>
             <remarks>
             If omitted, the BarSeries' data points start from the corresponding axis.
@@ -5603,7 +5607,7 @@
         </member>
         <member name="T:Telerik.Reporting.GraphSeriesArrangeMode">
             <summary>
-            Specifies how the the graph series are arranged according to each other.
+            Specifies how the graph series are arranged according to each other.
             </summary>
         </member>
         <member name="F:Telerik.Reporting.GraphSeriesArrangeMode.Overlapped">
@@ -5795,6 +5799,86 @@
         <member name="P:Telerik.Reporting.LineSeries.DataPointLabelOffset">
             <summary>
             Gets or sets the DataPointLabel offset, according the DataPointLabelPosition.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.OhlcMarks">
+            <summary>
+            Represents the vertical indicators of the financial (stock) series.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.OhlcMarks.#ctor">
+            <summary>
+            Creates an instance of the OhlcMarks
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcMarks.Open">
+            <summary>
+            Gets or sets an expression that defines the <b>Open</b> point for an OHLC data point in a <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcMarks.High">
+            <summary>
+            Gets or sets an expression that defines the <b>High</b> point for an OHLC data point in a <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcMarks.Low">
+            <summary>
+            Gets or sets an expression that defines the <b>Low</b> point for an OHLC data point in a <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcMarks.Close">
+            <summary>
+            Gets or sets an expression that defines the <b>Close</b> point for an OHLC data point in a <see cref="T:Telerik.Reporting.CartesianCoordinateSystem"/>
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.OhlcSeries">
+            <summary>
+            Represents a series of OHLC data points in a two-dimensional Cartesian coordinate system. Not supported in polar coordinate system.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.OhlcSeries.#ctor">
+            <summary>
+            Creates an instance of the series
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcSeries.Y">
+            <summary>
+            Gets or sets a value indicating the four vertical indicators of the series (OHLC). 
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcSeries.DataPointLabelAlignment">
+            <summary>
+            Gets or sets a value indicating how the labels of the data points to be aligned. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcSeries.DataPointLabelOffset">
+            <summary>
+            Gets or sets the DataPointLabel offset, according the DataPointLabelPosition.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcSeries.MarkerType">
+            <summary>
+            Gets or sets a value determining the series marker type - candlestick or bar. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.OhlcSeries.MinMarkerWidth">
+            <summary>
+            Gets or sets the width of the data point markers;
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.OhlcMarkerType">
+            <summary>
+            Determines the marker type in OHLC series
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.OhlcMarkerType.Candlestick">
+            <summary>
+            Creates a candlestick markers on data points
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.OhlcMarkerType.Bar">
+            <summary>
+            Creates a bar markers on data points
             </summary>
         </member>
         <member name="T:Telerik.Reporting.RangeAreaSeries">
@@ -6206,6 +6290,11 @@
         <member name="P:Telerik.Reporting.ReportItemBase.ToolTip">
             <summary>
             Gets the tooltip associated with the current report item.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.ReportItemBase.AccessibleDescription">
+            <summary>
+            Gets or sets the accessible description for the current report item.
             </summary>
         </member>
         <member name="T:Telerik.Reporting.ReportItemBase.ItemCollection">
@@ -9159,11 +9248,6 @@
             The <see cref="T:Telerik.Reporting.ReportItem"/> is docked to all of the edges of its container.
             </summary>
         </member>
-        <member name="T:Telerik.Reporting.EnumTypeConverter`1">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:Telerik.Reporting.ErrorEventArgs">
             <summary>
             Provides a data for the <see cref="E:Telerik.Reporting.Report.Error"/> event of a <see cref="T:Telerik.Reporting.Report"/>.
@@ -9261,8 +9345,15 @@
         </member>
         <member name="P:Telerik.Reporting.Group.GroupKeepTogether">
             <summary>
-            Set to FirstDetail to ensure that the group header and the first detail record are printed on the same page of output, or All to ensure that the entire group is printed on the same page of output. If there is not enough space on the current page, then rendering will skip to the top of the next page.
+            Set to FirstDetail to ensure that the group header and the first detail record 
+            are printed on the same page of output, 
+            or All to ensure that the entire group is printed on the same page of output. 
+            If there is not enough space on the current page, then rendering will skip to the top of the next page.
             </summary>
+            <remarks>
+            When set to All, the PageBreak settings of the internal report sections get neglected 
+            and no soft page breaks get produced.
+            </remarks>
         </member>
         <member name="P:Telerik.Reporting.Group.GroupHeader">
             <summary>
@@ -9481,7 +9572,8 @@
             <summary>
             The rendering engine should try to keep the <I>whole</I> group on 
             the same 
-            page.
+            page. This value has higher priority compared with the PageBreak property 
+            of the contained report sections.
             </summary>
         </member>
         <member name="T:Telerik.Reporting.HtmlTextBox">
@@ -9918,12 +10010,15 @@
             <summary>
             Represents a collection of <see cref="T:Telerik.Reporting.Parameter"/> objects. 
             </summary>
+            <remarks>
+            The collection does not allow adding two parameters with matching names.
+            </remarks>
         </member>
         <member name="M:Telerik.Reporting.ParameterCollection.Add(System.String,System.Object)">
             <summary>
             Creates a <see cref="T:Telerik.Reporting.Parameter"/> with specific settings and
             adds it to the 
-            <see cref="T:Telerik.Reporting.ParameterCollection"/>. 
+            <see cref="T:Telerik.Reporting.ParameterCollection"/> or updates an existing one. 
             </summary>
             <param name="name">
             A <see cref="T:System.String"/> value that will be used as 
@@ -9933,24 +10028,22 @@
             <param name="value">
             A <see cref="T:System.Object"/> value that will be used as 
             <see cref="P:Telerik.Reporting.Parameter.Value"/> for the newly created 
-            <see cref="T:Telerik.Reporting.Parameter"/>. May be expression.
+            <see cref="T:Telerik.Reporting.Parameter"/>. Can be an expression.
             </param>
-            <returns>The newly created and added <see cref="T:Telerik.Reporting.Parameter"/>
-            </returns>
         </member>
         <member name="M:Telerik.Reporting.ParameterCollection.AddRange(System.Collections.Generic.IEnumerable{Telerik.Reporting.Parameter})">
             <summary>
-            Adds an enumerable of <see cref="T:Telerik.Reporting.Parameter"/> objects to the 
+            Adds/updates an enumerable of <see cref="T:Telerik.Reporting.Parameter"/> objects to/in the 
             <see cref="T:Telerik.Reporting.ParameterCollection"/>. 
             </summary>
             <param name="enumerable">
-            An enumerable of <see cref="T:Telerik.Reporting.Parameter"/> objects to add to 
+            An enumerable of <see cref="T:Telerik.Reporting.Parameter"/> objects to add to/update in 
             the <see cref="T:Telerik.Reporting.ParameterCollection"/>.
             </param>
             <remarks>
             <para>The <see cref="T:Telerik.Reporting.Parameter"/> objects returned from the
             enumerable are appended to the end of the 
-            <see cref="T:Telerik.Reporting.ParameterCollection"/>.</para>
+            <see cref="T:Telerik.Reporting.ParameterCollection"/> or updated in place.</para>
             </remarks>
         </member>
         <member name="M:Telerik.Reporting.ParameterCollection.Contains(System.String)">
@@ -11223,7 +11316,7 @@
             <para>
             The <B>Tooltip</B> class consists of <B>Title</B> and <B>Text</B> string properties that can be either static text or expressions.
             </para>
-            </remarks>    
+            </remarks>  
         </member>
         <member name="P:Telerik.Reporting.ToolTip.Title">
             <summary>
@@ -33782,6 +33875,18 @@
             Otherwise false.
             </returns>
         </member>
+        <member name="M:Telerik.Reporting.Cache.Interfaces.IStorage.DeleteSet(System.String)">
+            <summary>
+            Deletes set of values denoted by the given key.
+            </summary>
+            <param name="key">
+            The key that denotes the stored set.
+            </param>
+            <returns>
+            True if the given key is found before deleted.
+            Otherwise false.
+            </returns>
+        </member>
         <member name="M:Telerik.Reporting.Cache.MsSqlServerStorage.#ctor(System.String)">
             <summary>
             Creates and initializes an instance of 
@@ -33863,6 +33968,12 @@
         <member name="M:Telerik.Reporting.Cache.MsSqlServerStorage.DeleteInSet(System.String,System.String)">
             <summary>
             Deletes a single string value from a set of values denoted from the given key.
+            </summary>
+            <seealso cref="M:Telerik.Reporting.Cache.Interfaces.IStorage.DeleteInSet(System.String,System.String)"/>
+        </member>
+        <member name="M:Telerik.Reporting.Cache.MsSqlServerStorage.DeleteSet(System.String)">
+            <summary>
+            Deletes a set of values denoted by the given key.
             </summary>
             <seealso cref="M:Telerik.Reporting.Cache.Interfaces.IStorage.DeleteInSet(System.String,System.String)"/>
         </member>
@@ -34054,6 +34165,21 @@
             Implements the <see cref="M:Telerik.Reporting.Cache.Interfaces.IStorage.DeleteInSet(System.String,System.String)"/> interface member.
             </remarks>
         </member>
+        <member name="M:Telerik.Reporting.Cache.CacheStorage.DeleteSet(System.String)">
+            <summary>
+            Deletes set of values denoted by the given key.
+            </summary>
+            <param name="key">
+            The key that denotes the stored set.
+            </param>
+            <returns>
+            True if set with the given key is found before deleted.
+            Otherwise false.
+            </returns>
+            <remarks>
+            Implements the <see cref="M:Telerik.Reporting.Cache.Interfaces.IStorage.DeleteSet(System.String)"/> interface member.
+            </remarks>
+        </member>
         <member name="M:Telerik.Reporting.Cache.File.FileStorage.#ctor">
             <summary>
             Creates an instance of the storage. The files representing the stored values
@@ -34090,6 +34216,16 @@
             </summary>
             <param name="parameters">Dictionary of name-value pairs
             representing storage configuration parameters.</param>
+        </member>
+        <member name="T:Telerik.Reporting.Configuration.AppDataElement">
+            <summary>
+            Internal use only
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Configuration.AppDataElement.Path">
+            <summary>
+            Internal use only
+            </summary>
         </member>
         <member name="T:Telerik.Reporting.Configuration.CacheSection">
             <summary>
@@ -34227,6 +34363,11 @@
             </summary>
         </member>
         <member name="P:Telerik.Reporting.Configuration.ReportingConfigurationSection.RestReportService">
+            <summary>
+            Internal use only
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Configuration.ReportingConfigurationSection.AppData">
             <summary>
             Internal use only
             </summary>
@@ -35935,6 +36076,11 @@
             Values of type <see cref="T:System.String"/> are accepted.
             </summary>
         </member>
+        <member name="T:Telerik.Reporting.Data.SRCategoryAttribute">
+            <summary>
+            Summary description for SRCategoryAttribute.
+            </summary>
+        </member>
         <member name="T:Telerik.Reporting.Barcodes.PDF417.EncodingMode">
             <summary>
             The EncodingMode enumeration determines the type of the acceptable data.
@@ -36153,6 +36299,11 @@
         <member name="F:Telerik.Reporting.Barcodes.QRCode.ECIMode.Windows1256">
             <summary>
             ECI 24.
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Barcodes.QRCode.ECIMode.UTF8">
+            <summary>
+            UTF-8.
             </summary>
         </member>
         <member name="F:Telerik.Reporting.Barcodes.QRCode.ECIMode.ISO646US">
@@ -37253,6 +37404,162 @@
             
             </summary>
         </member>
+        <member name="T:Telerik.Reporting.Processing.Accessibility.SR">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.BarcodeName">
+            <summary>
+              Looks up a localized string similar to Barcode.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ChartName">
+            <summary>
+              Looks up a localized string similar to Obsolete chart.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.CheckBoxName">
+            <summary>
+              Looks up a localized string similar to Check box.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.CheckBoxStatus">
+            <summary>
+              Looks up a localized string similar to Status {0}.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.DetailsSectionName">
+            <summary>
+              Looks up a localized string similar to Details section.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.GraphName">
+            <summary>
+              Looks up a localized string similar to Graph.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.HtmlTextBoxName">
+            <summary>
+              Looks up a localized string similar to HTML text box.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.MapName">
+            <summary>
+              Looks up a localized string similar to Map.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.NavigateToBookmarkAction">
+            <summary>
+              Looks up a localized string similar to navigate to bookmark.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.NavigateToReportAction">
+            <summary>
+              Looks up a localized string similar to navigate to report.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.NavigateToURLAction">
+            <summary>
+              Looks up a localized string similar to navigate to URL.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.PageFooterName">
+            <summary>
+              Looks up a localized string similar to Page footer.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.PageHeaderName">
+            <summary>
+              Looks up a localized string similar to Page header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.PanelName">
+            <summary>
+              Looks up a localized string similar to Panel.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.PerformsAction">
+            <summary>
+              Looks up a localized string similar to Performs a {0} action..
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.PictureBoxName">
+            <summary>
+              Looks up a localized string similar to Picture box.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ReportFooterName">
+            <summary>
+              Looks up a localized string similar to Report footer.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ReportHeaderName">
+            <summary>
+              Looks up a localized string similar to Report header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ReportName">
+            <summary>
+              Looks up a localized string similar to Report.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ShapeName">
+            <summary>
+              Looks up a localized string similar to Shape.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.SortingAction">
+            <summary>
+              Looks up a localized string similar to sorting.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.SubReportName">
+            <summary>
+              Looks up a localized string similar to Subreport.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.TableContainsRowsCols">
+            <summary>
+              Looks up a localized string similar to Contains {0} rows and {1} columns.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.TableName">
+            <summary>
+              Looks up a localized string similar to Table.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.TableOfContentsItemName">
+            <summary>
+              Looks up a localized string similar to Table of contents item.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.TableOfContentsName">
+            <summary>
+              Looks up a localized string similar to Table of contents.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.TextBoxName">
+            <summary>
+              Looks up a localized string similar to Text box.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Accessibility.SR.ToggleVisibilityAction">
+            <summary>
+              Looks up a localized string similar to toggle visibility.
+            </summary>
+        </member>
         <member name="T:Telerik.Reporting.Processing.LayoutElement">
             <summary>
             Base class for all processing instances of report items.
@@ -37533,6 +37840,11 @@
             For Binding purposes
             </summary>
         </member>
+        <member name="P:Telerik.Reporting.Processing.ReportItemBase.AccessibleDescription">
+            <summary>
+            Gets or sets the accessible description for the current report item.
+            </summary>
+        </member>
         <member name="T:Telerik.Reporting.Processing.ITableCellInternal">
             <summary>
             Extends ITableCell with read/write functionality
@@ -37750,6 +38062,26 @@
         <member name="P:Telerik.Reporting.Processing.Imaging.ImageInfo.Height">
             <summary>
             Image height, in pixels
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Processing.AccessibleItem">
+            <summary>
+            Represents a processed AccessibleItem that will be used in a viewer
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.AccessibleItem.Name">
+            <summary>
+            The type of the item: textbox, graph, table, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.AccessibleItem.Description">
+            <summary>
+            Accessible description - evaluated from item definition.AccessibleDescription
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.AccessibleItem.BookmarkId">
+            <summary>
+            The bookmark Id of the accessible element, if available.
             </summary>
         </member>
         <member name="T:Telerik.Reporting.Processing.IAction">
@@ -38408,6 +38740,11 @@
             When this method returns, contains the value associated with the specified member, if the key is found; 
             otherwise, <b>null</b> (<b>Nothing</b>). This parameter is passed uninitialized.</param>
             <returns><b>true</b> if the member exists; otherwise <b>false</b>.</returns>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.IDataObject.Number">
+            <summary>
+            Internal use only
+            </summary>
         </member>
         <member name="P:Telerik.Reporting.Processing.IDataObject.Item(System.String)">
             <summary>
@@ -39132,27 +39469,6 @@
             <code lang="VB" source="CodeSnippets\VB\API\Telerik\Reporting\Processing\Access_Processing_Instances_Children_Snippets.vb" region="Using_ElementTreeHelper_FindChildByName_Snippet" />
             </example>
         </member>
-        <member name="T:Telerik.Reporting.Processing.Errors">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Telerik.Reporting.Processing.Errors.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Telerik.Reporting.Processing.Errors.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="P:Telerik.Reporting.Processing.Errors.RenderingFormatNotAvailable">
-            <summary>
-              Looks up a localized string similar to {0} rendering format is not available..
-            </summary>
-        </member>
         <member name="T:Telerik.Reporting.Processing.FontInfo">
             <summary>
             Can create and hold font measurements needed to measure and draw strings with some font 
@@ -39277,6 +39593,18 @@
         <member name="T:Telerik.Reporting.Processing.ItemFactory">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Processing.LayoutItem">
+            <summary>
+            Represents the child items of an absolute container
+            which dependencies will be determined
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Processing.LayoutDependencies">
+            <summary>
+            Represents the layout dependencies of the child items 
+            inside absolute position layout container
             </summary>
         </member>
         <member name="M:Telerik.Reporting.Processing.MetafileUtils.CalcMetafileSizeCore(System.Drawing.SizeF)">
@@ -39504,11 +39832,6 @@
             </summary>
         </member>
         <member name="T:Telerik.Reporting.Processing.Shape">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Telerik.Reporting.Processing.SRErrors">
             <summary>
             
             </summary>
@@ -39793,6 +40116,12 @@
         <member name="T:Telerik.Reporting.Processing.Common.SizeLU">
             <summary>
             Size of layout units
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.Data.DataModeling.Interfaces.ISimpleMeasure.IsExpandable">
+            <summary>
+            Gets a value indicating if the type of the measure has child measures.
+            Used only when the measure is retrieved from other pp domain (RS scenario)
             </summary>
         </member>
         <member name="T:Telerik.Reporting.Processing.IDataGroupMember">
@@ -41168,7 +41497,7 @@
         </member>
         <member name="P:Telerik.Reporting.Processing.RenderingResult.MimeType">
             <summary>
-            Gets the the MIME type of the document.
+            Gets the MIME type of the document.
             </summary>
         </member>
         <member name="P:Telerik.Reporting.Processing.RenderingResult.Extension">
@@ -41195,6 +41524,15 @@
             <summary>
             Gets a value that indicates whether the collection contains errors.
             </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Processing.RenderingResult.PageCount">
+            <summary>
+            Gets a value that indicates the total number of pages in the generated document.
+            </summary>
+            <remarks>
+            For formats supporting pagination, the total number of pages is calculated by the rendering engine according to the report's page settings.
+            For formats not supporting pagination, e.g. XLS, XLSX, CSV, the property will return a default value of 0.
+            </remarks>
         </member>
         <member name="T:Telerik.Reporting.Processing.ReportProcessor">
             <summary>
@@ -42528,6 +42866,11 @@
             Used instead of RectangleRF when reference type needed. 
             </summary>
         </member>
+        <member name="T:Telerik.Reporting.Writing.AccessibleImageAdornerActionWriter">
+            <summary>
+            Returns the bounds of the whole item, associated with the action, as adorner bounds.
+            </summary>
+        </member>
         <member name="P:Telerik.Reporting.BaseRendering.DocumentRenderingExtensionBase.DrawTrial">
             <summary>
             Used from design-time to suppress trial message
@@ -42692,11 +43035,6 @@
             </summary>
             <param name="rectMm"></param>
             <returns></returns>
-        </member>
-        <member name="T:Telerik.Reporting.ImageRendering.DocumentPdf">
-            <summary>
-            
-            </summary>
         </member>
         <member name="M:Telerik.Reporting.ImageRendering.DocumentPdf.AddPage">
             <summary>
@@ -43104,7 +43442,7 @@
             to the specified PdfWriter.
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfObject.PrepareForSave">
+        <member name="M:Telerik.Reporting.Pdf.PdfObject.PrepareForFinish">
             <summary>
             When overridden in a derived class, prepares the object to get saved.
             </summary>
@@ -43166,6 +43504,12 @@
             in a derived class.
             </summary>
         </member>
+        <member name="P:Telerik.Reporting.Pdf.PdfDictionary.Stream">
+            <summary>
+            Gets or sets the PDF stream belonging to this dictionary. Returns null if the dictionary has
+            no stream. To create the stream, call the CreateStream function.
+            </summary>
+        </member>
         <member name="P:Telerik.Reporting.Pdf.PdfDictionary.Meta">
             <summary>
             When overridden in a derived class, gets the KeysMeta of this 
@@ -43175,12 +43519,6 @@
         <member name="P:Telerik.Reporting.Pdf.PdfDictionary.Elements">
             <summary>
             Gets the hashtable containing the elements of this dictionary.
-            </summary>
-        </member>
-        <member name="P:Telerik.Reporting.Pdf.PdfDictionary.Stream">
-            <summary>
-            Gets or sets the PDF stream belonging to this dictionary. Returns null if the dictionary has
-            no stream. To create the stream, call the CreateStream function.
             </summary>
         </member>
         <member name="T:Telerik.Reporting.Pdf.Filters.ASCII85Decode">
@@ -44760,7 +45098,7 @@
             Summary description for PdfCatalogDictionary.
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfCatalogDictionary.PrepareForSave">
+        <member name="M:Telerik.Reporting.Pdf.PdfCatalogDictionary.PrepareForFinish">
             <summary>
             Dispatches PrepareForSave to the objects that need it.
             </summary>
@@ -45188,22 +45526,9 @@
             of PdfName objects.
             </summary>
         </member>
-        <member name="P:Telerik.Reporting.Pdf.DictionaryElements.Item(System.String)">
-            <summary>
-            Gets or sets an entry in the dictionary. The specified key must
-            be a valid PDF name starting with a slash '/'. This property
-            provides full access to the elements of the PDF dictionary.
-            Wrong use can lead to errors or corrupt PDF files.
-            </summary>
-        </member>
         <member name="P:Telerik.Reporting.Pdf.DictionaryElements.Item(Telerik.Reporting.Pdf.PdfName)">
             <summary>
             Gets or sets an entry in the dictionary identified by a PdfName object.
-            </summary>
-        </member>
-        <member name="T:Telerik.Reporting.Pdf.PdfDocument">
-            <summary>
-            Summary description for PdfDocument.
             </summary>
         </member>
         <member name="M:Telerik.Reporting.Pdf.PdfDocument.AddPage">
@@ -45211,7 +45536,7 @@
             Creates a new page and adds it to this document.
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfDocument.PrepareForSave">
+        <member name="M:Telerik.Reporting.Pdf.PdfDocument.PrepareForFinish">
             <summary>
             Dispatches PrepareForSave to the objects that need it.
             </summary>
@@ -46054,7 +46379,7 @@
             http://partners.adobe.com/public/developer/en/acrobat/5411.ToUnicode.pdf
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfFontType0Dictionary.PdfToUnicodeCMapDictionary.PrepareForSave">
+        <member name="M:Telerik.Reporting.Pdf.PdfFontType0Dictionary.PdfToUnicodeCMapDictionary.PrepareForFinish">
             <summary>
             Creates the ToUnicode map from the CMapInfo.
             </summary>
@@ -46603,7 +46928,7 @@
             </summary>
             <param name="document">The document.</param>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfOutline.PrepareForSave">
+        <member name="M:Telerik.Reporting.Pdf.PdfOutline.PrepareForFinish">
             <summary>
             Creates key/values pairs according to the object structure.
             </summary>
@@ -46823,7 +47148,7 @@
             The content stream currently used by an PdfGraphics object for rendering.
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.#ctor">
+        <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.#ctor(System.Int32)">
             <summary>
             Initializes a new page. The page must be added to a document before
             it can be used.
@@ -46839,7 +47164,7 @@
             Gets the resource name of the specified gdiImage within this page.
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.AddDocumentLink(Telerik.Reporting.Pdf.PdfRectangle,Telerik.Reporting.Pdf.PdfPageDictionary,System.Single,System.Single)">
+        <member name="M:Telerik.Reporting.Pdf.PdfPageDictionary.AddDocumentLink(Telerik.Reporting.Pdf.PdfRectangle,Telerik.Reporting.Pdf.PdfReference,System.Single,System.Single)">
             <summary>
             Adds an intra document link.
             </summary>
@@ -47410,10 +47735,12 @@
             Returns the next free object number.
             </summary>
         </member>
-        <member name="M:Telerik.Reporting.Pdf.PdfReferenceTable.WriteObject(Telerik.Reporting.Pdf.IO.PdfWriter)">
+        <member name="M:Telerik.Reporting.Pdf.PdfReferenceTable.WriteObject(Telerik.Reporting.Pdf.IO.PdfWriter,System.Collections.Generic.ICollection{Telerik.Reporting.Pdf.PdfReference})">
             <summary>
             Writes the cross-reference table section in the pdf stream.
             </summary>
+            
+            <param name="writer"></param>
         </member>
         <member name="P:Telerik.Reporting.Pdf.PdfReferenceTable.Item(Telerik.Reporting.Pdf.PdfObjectID)">
             <summary>
@@ -50567,8 +50894,10 @@
         </member>
         <member name="M:Telerik.Reporting.RtfRendering.Table.Report.ReplaceHeaderFooterExpressions">
             <summary>
-            Very neat. Replace the PageNumber and PageCount with Word's special
-            control words and let Word do the rest.
+            Replace the PageNumber and PageCount with XML 1.0 friendly non-character
+            symbols which will not be present in the text otherwise.
+            The RtfWriter will replace those symbols later on with 
+            the special Word's control strings and let Word do the rest.
             </summary>
         </member>
         <member name="T:Telerik.Reporting.RtfRendering.Table.ReportSection">
@@ -50694,6 +51023,11 @@
         <member name="M:Telerik.Reporting.CsvRendering.CrosstabToFlatTableConverter.GetElement(System.Int32,System.Int32,System.Boolean)">
             <summary>
             Gets the element at the provided cell coordinates
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.XamlRendering.DocumentModel.XmlWriting.AccessibilityElementAttributeWriter">
+            <summary>
+            Class that appends accessibility attributes to an existing element
             </summary>
         </member>
         <member name="M:Telerik.Reporting.XamlRendering.DocumentWriting.IElementWriter.WriteContent(Telerik.Reporting.Processing.LayoutElement,Telerik.Reporting.Paging.ElementPageInfo,System.Boolean)">
@@ -50926,6 +51260,80 @@
             <code lang="C#" source="CodeSnippets\CS\API\Telerik\Reporting\XmlSerializationSnippets.cs" region="XmlReaderDeserializationSnippet"/>
             <code lang="VB" source="CodeSnippets\VB\API\Telerik\Reporting\XmlSerializationSnippets.vb" region="XmlReaderDeserializationSnippet"/>
             </example>
+        </member>
+        <member name="T:Telerik.Reporting.Utils.DataDirectDrivers.DriverDescriptor">
+            <summary>
+            Class, describing the files to be copied and registered. Includes x64 and x86 distribution sets and some additional files.
+            The aliases are prefixed with R0/R6 and suffixed with the current driver version.
+            Based on DataDirect file list description here: http://media.datadirect.com/download/docs/odbc64/readme/winread.htm
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Utils.DataDirectDrivers.DriverDescriptor.DriverNameMapX64">
+            <summary>
+            The drivers list for 64-bit distribution
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Utils.DataDirectDrivers.DriverDescriptor.DriverNameMapX86">
+            <summary>
+            The drivers list for 32-bit distribution (includes all the names in 64-bit distribution)
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Utils.DataDirectDrivers.DriverDescriptor.LinkedDriverFiles">
+            <summary>
+            Linked files that must be copied if the key driver is installed.
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Utils.DataDirectDrivers.DriverDescriptor.AdditionalDriverFiles">
+            <summary>
+            Additional files are always copied to the target directory. Some of them might need prefix.
+            </summary>
+        </member>
+        <member name="F:Telerik.Reporting.Utils.DataDirectDrivers.DriverDescriptor.RootLegalFiles">
+            <summary>
+            Mandatory legal files, placed in root directory
+            http://media.datadirect.com/download/docs/odbc/distgde/index.html#page/distguide%2Ffiles-you-must-distribute-for-all-drivers.html%23
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Utils.DataDirectDrivers.CopyToAnotherTargetAction">
+            <summary>
+            Action used when a file must be copied to another location different from TargetDir
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Utils.DataDirectDrivers.CopyToAnotherTargetAction.CopyMode">
+            <summary>
+            Determines if the file must be copied or moved to the other location
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Utils.DataDirectDrivers.DriverRegEntryBase.RootDirectory">
+            <summary>
+            Returns the Root directory, assuming that ALL drivers are using the root\platform\drivername.dll pattern (as it is in documentation)
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Utils.DataDirectDrivers.ImpalaWireProtocolDriverRegEntry.SqlLevelOverride">
+            <summary>
+            This value is "0" according to the documentation, but in the Registry the Progress Installer sets "1".
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Utils.DataDirectDrivers.OdbcDriversUnblocker.Unblock(System.Data.IDbConnection)">
+            <summary>
+            Extension method for unblocking OdbcConnection
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:Telerik.Reporting.Utils.DataDirectDrivers.OdbcDriversUnblocker.IsBrandedOdbcDriverUsed(System.Data.Odbc.OdbcConnection,System.String@)">
+            <summary>
+            Checks if the driver starts with R0/R6, contains current DRIVER_VERSION and it's a known driver name, registered in DriverDescriptor
+            </summary>
+            <param name="connection"></param>
+            <param name="prefix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Reporting.Utils.DataDirectDrivers.OdbcDriversUnblocker.UnblockConnection(System.Data.Odbc.OdbcConnection,System.String)">
+            <summary>
+            Uses reflection to find and call the method OdbcConnectionHandle.SetConnectionAttribute3, which calls the ODBC32 SQLSetConnectAttrW method.
+            OdbcConnectionHandle class is internal and cannot be used directly.
+            </summary>
+            <param name="connection"></param>
         </member>
         <member name="M:Telerik.Reporting.Utils.ImageUtils.MimeTypeFromImageFormat(System.Drawing.Imaging.ImageFormat)">
             <summary>

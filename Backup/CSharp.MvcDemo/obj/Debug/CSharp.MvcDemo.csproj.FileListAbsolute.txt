@@ -1,0 +1,119 @@
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Resources\world.dbf
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Resources\world.shp
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Choropleth\Resources\world.dbf
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Choropleth\Resources\world.shp
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\CSharp.MvcDemo.dll.config
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\CSharp.MvcDemo.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\CSharp.MvcDemo.pdb
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\CSharp.ReportLibrary.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\DocumentFormat.OpenXml.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Newtonsoft.Json.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.IO.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.Extensions.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.Formatting.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.Primitives.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.WebRequest.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Runtime.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Threading.Tasks.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Helpers.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Http.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Http.WebHost.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Mvc.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Razor.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.WebPages.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.WebPages.Razor.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.Services.WebApi.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.XpsRendering.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.ReportViewer.Mvc.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\CSharp.ReportLibrary.pdb
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Newtonsoft.Json.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.IO.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.Extensions.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.Formatting.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.Primitives.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Net.Http.WebRequest.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Runtime.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Threading.Tasks.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Mvc.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Helpers.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Http.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Http.WebHost.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.Razor.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.WebPages.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.WebPages.Razor.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.pdb
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.XpsRendering.pdb
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.XpsRendering.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.Services.WebApi.pdb
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.Reporting.Services.WebApi.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.ReportViewer.Mvc.pdb
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\Telerik.ReportViewer.Mvc.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.csproj.App.config
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.csprojResolveAssemblyReference.cache
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.dll
+C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Resources\world.dbf
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Resources\world.shp
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\CSharp.MvcDemo.dll.config
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\CSharp.MvcDemo.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\CSharp.MvcDemo.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\CSharp.ReportLibrary.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Newtonsoft.Json.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.IO.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.Extensions.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.Formatting.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.Primitives.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.WebRequest.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Runtime.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Threading.Tasks.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Helpers.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Http.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Http.WebHost.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Mvc.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Razor.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.WebPages.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.Services.WebApi.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.XpsRendering.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.ReportViewer.Mvc.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\CSharp.ReportLibrary.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Newtonsoft.Json.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.IO.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.Extensions.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.Formatting.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.Primitives.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Net.Http.WebRequest.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Runtime.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Threading.Tasks.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Mvc.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Helpers.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Http.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Http.WebHost.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.Razor.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.WebPages.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.XpsRendering.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.XpsRendering.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.Services.WebApi.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.Reporting.Services.WebApi.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.ReportViewer.Mvc.pdb
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\Telerik.ReportViewer.Mvc.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.csproj.App.config
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.csprojResolveAssemblyReference.cache
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.dll
+C:\Users\LetarikT\Desktop\CSharp\MvcDemo\obj\Debug\CSharp.MvcDemo.pdb

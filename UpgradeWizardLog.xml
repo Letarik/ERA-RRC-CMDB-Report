@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="DashBoard.resx" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\Dashboard\DashBoard.resx" />
+  <event action="Analyze" type="Success" name="ReportCatalog.resx" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\ReportCatalog\ReportCatalog.resx" />
+  <event action="Analyze" type="Success" name="CSharp.ReportLibrary" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\CSharp.MvcDemo.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\packages.config" />
+  <event action="Analyze" type="Success" name="telerikReportViewer-11.1.17.614.js" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\ReportViewer\js\telerikReportViewer-11.1.17.614.js" />
+  <event action="Analyze" type="Success" name="telerikReportViewer-11.1.17.614.min.js" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\ReportViewer\js\telerikReportViewer-11.1.17.614.min.js" />
+  <event action="Analyze" type="Success" name="telerikReportViewer.kendo-11.1.17.614.min.js" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\ReportViewer\js\telerikReportViewer.kendo-11.1.17.614.min.js" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\_ViewStart.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\_ViewStart.cshtml" />
+  <event action="Analyze" type="Success" name="_ViewStart.cshtml" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\_ViewStart.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Home\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Home\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Index.cshtml" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Home\Index.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Shared\_Layout.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Shared\_Layout.cshtml" />
+  <event action="Analyze" type="Success" name="_Layout.cshtml" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Shared\_Layout.cshtml" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Shared\Error.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Shared\Error.cshtml" />
+  <event action="Analyze" type="Success" name="Error.cshtml" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Shared\Error.cshtml" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Web.Release.config" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Web.Release.config" />
+  <event action="Analyze" type="Success" name="CSharp.MvcDemo" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\CSharp.MvcDemo.csproj" />
+  <event action="Analyze" type="Success" name="CSharp.ReportExamples.VS2015" path="C:\Users\LetarikT\Desktop\CSharp\CSharp.ReportExamples.VS2015.sln" />
+  <event action="Analyze" type="Success" name=".TemplateUrl(Url.Content(&quot;~/ReportViewer/templates/telerikReportViewerTemplate.html&quot;))" path=".TemplateUrl(Url.Content(&quot;~/ReportViewer/templates/telerikReportViewerTemplate.html&quot;))" />
+  <event action="Analyze" type="Success" name="telerikReportViewer-11.1.17.614.js" path="telerikReportViewer-11.1.17.614.js" />
+  <event action="Analyze" type="Success" name="telerikReportViewer.kendo-11.1.17.614.min.js" path="telerikReportViewer.kendo-11.1.17.614.min.js" />
+  <event action="Backup" type="Success" name="CSharp.ReportLibrary" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Backup" type="Success" name="CSharp.MvcDemo" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\CSharp.MvcDemo.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="CSharp.ReportLibrary" path="C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\CSharp.MvcDemo.csproj" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer-11.1.17.614.js" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\ReportViewer\js\telerikReportViewer-11.1.17.614.js" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer-11.1.17.614.min.js" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\ReportViewer\js\telerikReportViewer-11.1.17.614.min.js" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer.kendo-11.1.17.614.min.js" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\ReportViewer\js\telerikReportViewer.kendo-11.1.17.614.min.js" />
+  <event action="Upgrade" type="Success" name=".TemplateUrl(Url.Content(&quot;~/ReportViewer/templates/telerikReportViewerTemplate.html&quot;))" path=".TemplateUrl(Url.Content(&quot;~/ReportViewer/templates/telerikReportViewerTemplate.html&quot;))" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer-11.1.17.614.js" path="telerikReportViewer-11.1.17.614.js" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer.kendo-11.1.17.614.min.js" path="telerikReportViewer.kendo-11.1.17.614.min.js" />
+  <event action="Upgrade" type="Success" name="Index.cshtml" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\Views\Home\Index.cshtml" />
+  <event action="Upgrade" type="Success" name="CSharp.MvcDemo" path="C:\Users\LetarikT\Desktop\CSharp\MvcDemo\CSharp.MvcDemo.csproj" />
+  <event action="Upgrade" type="Success" name="CSharp.ReportExamples.VS2015" path="C:\Users\LetarikT\Desktop\CSharp\CSharp.ReportExamples.VS2015.sln" />
+</log>

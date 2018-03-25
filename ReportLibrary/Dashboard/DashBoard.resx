@@ -117,4 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="quaryareaDataSource.SelectCommand" xml:space="preserve">
+    <value>SELECT        Location.ID, Location.Material_Description, Location.District, Location.Road_Section, Location.Quarry_Area, Location.Change, Location.Offset_Distance, 
+                         Location.Latitude, Location.Longitude, Location.Elevation, Location.Estimated_Quantity, Location.Purpose, Location.Test_Result, Location.Photo, 
+                         Summary_Report.Eatimated_Quantiy, Summary_Report.LL, Summary_Report.PI, Summary_Report.SC, Summary_Report.PP, Summary_Report.GM, 
+                         Summary_Report.PM, Summary_Report.OMC, Summary_Report.MDD, Summary_Report.CBR, Summary_Report.SWELL, Summary_Report.ACV, 
+                         Summary_Report.TFV, Summary_Report.LAA, Summary_Report.FI, Summary_Report.SGR, Summary_Report.WAT, Summary_Report.ST, Summary_Report.SEVT, 
+                         Summary_Report.Purpose_of_Material
+FROM            Location INNER JOIN
+                         Summary_Report ON Location.ID = Summary_Report.Location_ID
+ORDER BY Location.ID, Summary_Report.Location_ID</value>
+  </data>
+  <metadata name="$this.ShowSnapGrid" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

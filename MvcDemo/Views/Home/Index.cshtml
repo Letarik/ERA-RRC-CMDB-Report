@@ -1,4 +1,4 @@
-
+﻿
 
 @using Telerik.Reporting
 @using Telerik.ReportViewer.Mvc
@@ -49,7 +49,7 @@
         // The URL for the report viewer template. The template can be edited -
         // new functionalities can be added and unneeded ones can be removed.
         // For more information please check http://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
-        // .TemplateUrl(Url.Content("~/ReportViewer/templates/telerikReportViewerTemplate.html"))
+        // 
         // Strongly typed ReportSource - TypeReportSource or UriReportSource.
         .ReportSource(new TypeReportSource() { TypeName = typeof(ReportCatalog).AssemblyQualifiedName })
         // Specifies whether the viewer is in interactive or print preview mode.
@@ -78,10 +78,10 @@
 @section scripts
 {
     <!--kendo.all.min.js can be used as well kendo.web.min.js and kendo.mobile.min.js-->
-    <script src="@Url.Content("~/ReportViewer/js/telerikReportViewer.kendo-11.1.17.614.min.js")"></script>
+    <script src="@Url.Content("~/ReportViewer/js/telerikReportViewer.kendo-12.0.18.227.min.js")"></script>
     <script src="@Url.Content("~/Scripts/themeSwitcher.js")"></script>
 
-    <script src="@Url.Content("~/ReportViewer/js/telerikReportViewer-11.1.17.614.js")"></script>
+    <script src="@Url.Content("~/ReportViewer/js/telerikReportViewer-12.0.18.227.js")"></script>
 
     <script type="text/javascript">
             $(document).ready(function () {
