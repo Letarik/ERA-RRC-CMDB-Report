@@ -171,7 +171,7 @@
             Utility method. Resolves an instance ID to a report key.
             </summary>
             <returns>
-            ReportInstanceKey if availble, otherwise null.
+            ReportInstanceKey if available, otherwise null.
             </returns>
         </member>
         <member name="M:Telerik.Reporting.Services.WebApi.ReportsControllerBase.DeleteInstance(System.String,System.String)">
@@ -421,6 +421,18 @@
             Registers report controller's routes in the application configuration.
             </summary>
             <param name="config">The application configuration to add the routes to</param>
+            <remarks>Registers report controller's routes with the default "api" first path segment.</remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            Registers report controller's routes in the application configuration.
+            </summary>
+            <param name="config">The application configuration to add the routes to</param>
+            <param name="firstPathSegment">The first path segment to include in the route template. 
+            For example, "api" is the default literal path segment in the "api/{controller}" route template.
+            Use this overload and pass a unique path segment (e.g. "reportingapi") to avoid collisions with other Web API services.
+            Then modify the report viewer client to use the custom service URL address.
+            </param>
         </member>
         <member name="T:Telerik.Reporting.Services.WebApi.ReportsExceptionFilter">
             <summary>

@@ -436,6 +436,20 @@
             <param name="parameterEditorsBuilder"></param>
             <returns><see cref="T:Telerik.ReportViewer.Mvc.IReportViewerBuilder"/></returns>
         </member>
+        <member name="M:Telerik.ReportViewer.Mvc.IReportViewerBuilder.EnableAccessibility(System.Boolean)">
+            <summary>
+            Enables or disables the accessibility features of the report viewer and its contents.
+            </summary>
+            <param name="enable"></param>
+            <returns><see cref="T:Telerik.ReportViewer.Mvc.IReportViewerBuilder"/></returns>
+        </member>
+        <member name="M:Telerik.ReportViewer.Mvc.IReportViewerBuilder.AccessibilityKeyMap(Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap)">
+            <summary>
+            Sets the key mappings used in accessibility mode.
+            </summary>
+            <param name="keyMap"><see cref="!:Telerik.ReportViewer.Html5.Common.AccessibilityKeyMap"/></param>
+            <returns><see cref="T:Telerik.ReportViewer.Mvc.IReportViewerBuilder"/></returns>
+        </member>
         <member name="T:Telerik.ReportViewer.Mvc.ITelerikReportingFactory">
             <summary>
             Represents a factory used to generate the JavaScript representation of Telerik Reporting widgets
@@ -665,6 +679,41 @@
         <member name="F:Telerik.ReportViewer.Mvc.ViewModes.PRINT_PREVIEW">
             <summary>
             Displays the paginated report as if it is printed on paper. Interactivity is not enabled.
+            </summary>
+        </member>
+        <member name="T:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap">
+            <summary>
+            Provides a class for the key mapping used when report viewer accessibility is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap.CONFIRM_KEY">
+            <summary>
+            Key code for executing report actions and applying report parameters
+            </summary>
+        </member>
+        <member name="P:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap.CONTENT_AREA_KEY">
+            <summary>
+            Key code for navigating to report contents area, when pressed together with CTRL + ALT
+            </summary>
+        </member>
+        <member name="P:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap.DOCUMENT_MAP_AREA_KEY">
+            <summary>
+            Key code for navigating to document map area, when pressed together with CTRL + ALT
+            </summary>
+        </member>
+        <member name="P:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap.MENU_AREA_KEY">
+            <summary>
+            Key code for navigating to menu area, when pressed together with CTRL + ALT
+            </summary>
+        </member>
+        <member name="P:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap.PARAMETERS_AREA_KEY">
+            <summary>
+            Key code for navigating to parameters area, when pressed together with CTRL + ALT
+            </summary>
+        </member>
+        <member name="P:Telerik.ReportViewer.Html5.Common.Options.AccessibilityKeyMap.Default">
+            <summary>
+            Returns an instance, initialized with the default key mapping
             </summary>
         </member>
         <member name="T:Telerik.ReportViewer.Html5.Common.ExceptionMessages">
