@@ -220,12 +220,12 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             this.txtQuaryArea.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.8000006675720215D), Telerik.Reporting.Drawing.Unit.Inch(3.9418537198798731E-05D));
             this.txtQuaryArea.Name = "txtQuaryArea";
-            this.txtQuaryArea.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.7953591346740723D), Telerik.Reporting.Drawing.Unit.Inch(0.20000001788139343D));
+            this.txtQuaryArea.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.8000006675720215D), Telerik.Reporting.Drawing.Unit.Inch(0.20000001788139343D));
             this.txtQuaryArea.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.txtQuaryArea.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Point(100D);
             this.txtQuaryArea.Style.Padding.Top = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.txtQuaryArea.StyleName = "legend";
-            this.txtQuaryArea.Value = "Quary Area";
+            this.txtQuaryArea.Value = "Quary Area PI Index";
             // 
             // panel1
             // 
@@ -346,7 +346,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graph1});
             this.panel2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(147.32000732421875D), Telerik.Reporting.Drawing.Unit.Mm(5.0840039253234863D));
             this.panel2.Name = "panel2";
-            this.panel2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.92000579833984D), Telerik.Reporting.Drawing.Unit.Mm(129.53599548339844D));
+            this.panel2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.92000579833984D), Telerik.Reporting.Drawing.Unit.Mm(126.99599456787109D));
             // 
             // panel3
             // 
@@ -887,15 +887,18 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graph1.CategoryGroups.Add(graphGroup1);
             this.graph1.CoordinateSystems.Add(this.polarCoordinateSystem6);
             this.graph1.DataSource = this.quaryareaDataSource;
+            this.graph1.Legend.Height = Telerik.Reporting.Drawing.Unit.Mm(30D);
+            this.graph1.Legend.Position = Telerik.Reporting.GraphItemPosition.BottomLeft;
             this.graph1.Legend.Style.LineColor = System.Drawing.Color.LightGray;
             this.graph1.Legend.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
-            this.graph1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0D), Telerik.Reporting.Drawing.Unit.Mm(2.535996675491333D));
+            this.graph1.Legend.Width = Telerik.Reporting.Drawing.Unit.Mm(25D);
+            this.graph1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0.0010012307902798057D), Telerik.Reporting.Drawing.Unit.Mm(2.535996675491333D));
             this.graph1.Name = "graph1";
             this.graph1.PlotAreaStyle.LineColor = System.Drawing.Color.LightGray;
             this.graph1.PlotAreaStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.graph1.Series.Add(this.barSeries8);
             this.graph1.SeriesGroups.Add(graphGroup2);
-            this.graph1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.15804290771484D), Telerik.Reporting.Drawing.Unit.Mm(124.45600891113281D));
+            this.graph1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.15703582763672D), Telerik.Reporting.Drawing.Unit.Mm(121.92000579833984D));
             this.graph1.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Pixel(10D);
             this.graph1.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Pixel(10D);
             this.graph1.Style.Padding.Right = Telerik.Reporting.Drawing.Unit.Pixel(10D);
@@ -903,7 +906,7 @@ namespace Telerik.Reporting.Examples.CSharp
             graphTitle1.Position = Telerik.Reporting.GraphItemPosition.TopCenter;
             graphTitle1.Style.LineColor = System.Drawing.Color.LightGray;
             graphTitle1.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
-            graphTitle1.Text = "graph1";
+            graphTitle1.Text = "PI Index";
             this.graph1.Titles.Add(graphTitle1);
             // 
             // polarCoordinateSystem6
@@ -943,7 +946,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.barSeries8.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked100;
             this.barSeries8.CategoryGroup = graphGroup1;
             this.barSeries8.CoordinateSystem = this.polarCoordinateSystem6;
-            this.barSeries8.DataPointLabel = "= (Fields.LL) / CDbl(Exec(\'graph1\', (Fields.LL)))";
+            this.barSeries8.DataPointLabel = "= Count(Fields.PI) / CDbl(Exec(\'graph1\', Count(Fields.PI)))";
             this.barSeries8.DataPointLabelAlignment = Telerik.Reporting.BarDataPointLabelAlignment.OutsideColumn;
             this.barSeries8.DataPointLabelConnectorStyle.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Point(2D);
             this.barSeries8.DataPointLabelConnectorStyle.Padding.Top = Telerik.Reporting.Drawing.Unit.Point(2D);
@@ -958,9 +961,9 @@ namespace Telerik.Reporting.Examples.CSharp
             graphGroup2.Name = "quarry_AreaGroup";
             graphGroup2.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.Quarry_Area", Telerik.Reporting.SortDirection.Asc));
             this.barSeries8.SeriesGroup = graphGroup2;
-            this.barSeries8.ToolTip.Text = "= Format(\'{0:P}\', (Fields.LL) / CDbl(Exec(\'graph1\', (Fields.LL))))";
+            this.barSeries8.ToolTip.Text = "= Format(\'{0:P}\', Count(Fields.PI) / CDbl(Exec(\'graph1\', Count(Fields.PI))))";
             this.barSeries8.ToolTip.Title = "= Fields.Quarry_Area";
-            this.barSeries8.X = "= (Fields.LL)";
+            this.barSeries8.X = "= Count(Fields.PI)";
             // 
             // Dashboard
             // 
