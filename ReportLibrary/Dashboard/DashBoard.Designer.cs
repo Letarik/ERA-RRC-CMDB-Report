@@ -23,10 +23,6 @@ namespace Telerik.Reporting.Examples.CSharp
             Telerik.Reporting.TableGroup tableGroup6 = new Telerik.Reporting.TableGroup();
             Telerik.Reporting.TableGroup tableGroup7 = new Telerik.Reporting.TableGroup();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            Telerik.Reporting.NumericalScale numericalScale1 = new Telerik.Reporting.NumericalScale();
-            Telerik.Reporting.CategoryScale categoryScale1 = new Telerik.Reporting.CategoryScale();
-            Telerik.Reporting.GraphGroup graphGroup1 = new Telerik.Reporting.GraphGroup();
-            Telerik.Reporting.GraphGroup graphGroup2 = new Telerik.Reporting.GraphGroup();
             Telerik.Reporting.NumericalScale numericalScale2 = new Telerik.Reporting.NumericalScale();
             Telerik.Reporting.CategoryScale categoryScale2 = new Telerik.Reporting.CategoryScale();
             Telerik.Reporting.GraphGroup graphGroup3 = new Telerik.Reporting.GraphGroup();
@@ -51,9 +47,18 @@ namespace Telerik.Reporting.Examples.CSharp
             Telerik.Reporting.CategoryScale categoryScale7 = new Telerik.Reporting.CategoryScale();
             Telerik.Reporting.GraphGroup graphGroup13 = new Telerik.Reporting.GraphGroup();
             Telerik.Reporting.GraphGroup graphGroup14 = new Telerik.Reporting.GraphGroup();
-            Telerik.Reporting.CategoryScale categoryScale8 = new Telerik.Reporting.CategoryScale();
             Telerik.Reporting.NumericalScale numericalScale8 = new Telerik.Reporting.NumericalScale();
+            Telerik.Reporting.CategoryScale categoryScale8 = new Telerik.Reporting.CategoryScale();
+            Telerik.Reporting.GraphGroup graphGroup15 = new Telerik.Reporting.GraphGroup();
+            Telerik.Reporting.GraphGroup graphGroup16 = new Telerik.Reporting.GraphGroup();
+            Telerik.Reporting.CategoryScale categoryScale9 = new Telerik.Reporting.CategoryScale();
             Telerik.Reporting.NumericalScale numericalScale9 = new Telerik.Reporting.NumericalScale();
+            Telerik.Reporting.NumericalScale numericalScale10 = new Telerik.Reporting.NumericalScale();
+            Telerik.Reporting.GraphGroup graphGroup1 = new Telerik.Reporting.GraphGroup();
+            Telerik.Reporting.GraphTitle graphTitle1 = new Telerik.Reporting.GraphTitle();
+            Telerik.Reporting.NumericalScale numericalScale1 = new Telerik.Reporting.NumericalScale();
+            Telerik.Reporting.CategoryScale categoryScale1 = new Telerik.Reporting.CategoryScale();
+            Telerik.Reporting.GraphGroup graphGroup2 = new Telerik.Reporting.GraphGroup();
             Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
             Telerik.Reporting.Drawing.StyleRule styleRule1 = new Telerik.Reporting.Drawing.StyleRule();
             Telerik.Reporting.Drawing.StyleRule styleRule2 = new Telerik.Reporting.Drawing.StyleRule();
@@ -137,6 +142,11 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis15 = new Telerik.Reporting.GraphAxis();
             this.polarCoordinateSystem5 = new Telerik.Reporting.PolarCoordinateSystem();
             this.graphAxis17 = new Telerik.Reporting.GraphAxis();
+            this.graph1 = new Telerik.Reporting.Graph();
+            this.polarCoordinateSystem6 = new Telerik.Reporting.PolarCoordinateSystem();
+            this.graphAxis18 = new Telerik.Reporting.GraphAxis();
+            this.graphAxis19 = new Telerik.Reporting.GraphAxis();
+            this.barSeries8 = new Telerik.Reporting.BarSeries();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // textBox7
@@ -183,7 +193,7 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             // detail
             // 
-            this.detail.Height = Telerik.Reporting.Drawing.Unit.Inch(6.7999997138977051D);
+            this.detail.Height = Telerik.Reporting.Drawing.Unit.Inch(9.0889768600463867D);
             this.detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
             this.SummeryTestResult,
             this.txtQuaryArea,
@@ -210,7 +220,7 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             this.txtQuaryArea.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.8000006675720215D), Telerik.Reporting.Drawing.Unit.Inch(3.9418537198798731E-05D));
             this.txtQuaryArea.Name = "txtQuaryArea";
-            this.txtQuaryArea.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.8000006675720215D), Telerik.Reporting.Drawing.Unit.Inch(0.20000000298023224D));
+            this.txtQuaryArea.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.7953591346740723D), Telerik.Reporting.Drawing.Unit.Inch(0.20000001788139343D));
             this.txtQuaryArea.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.txtQuaryArea.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Point(100D);
             this.txtQuaryArea.Style.Padding.Top = Telerik.Reporting.Drawing.Unit.Inch(0D);
@@ -332,9 +342,11 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             // panel2
             // 
-            this.panel2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(147.32000732421875D), Telerik.Reporting.Drawing.Unit.Mm(5.08300256729126D));
+            this.panel2.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+            this.graph1});
+            this.panel2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(147.32000732421875D), Telerik.Reporting.Drawing.Unit.Mm(5.0840039253234863D));
             this.panel2.Name = "panel2";
-            this.panel2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.80206298828125D), Telerik.Reporting.Drawing.Unit.Mm(81D));
+            this.panel2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.92000579833984D), Telerik.Reporting.Drawing.Unit.Mm(129.53599548339844D));
             // 
             // panel3
             // 
@@ -355,9 +367,9 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             // textBox4
             // 
-            this.textBox4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.8000006675720215D), Telerik.Reporting.Drawing.Unit.Inch(3.4000003337860107D));
+            this.textBox4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.8000397682189941D), Telerik.Reporting.Drawing.Unit.Inch(5.2999997138977051D));
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.80000114440918D), Telerik.Reporting.Drawing.Unit.Inch(0.19980290532112122D));
+            this.textBox4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.7999606132507324D), Telerik.Reporting.Drawing.Unit.Inch(0.19980290532112122D));
             this.textBox4.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.textBox4.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Point(100D);
             this.textBox4.Style.Padding.Top = Telerik.Reporting.Drawing.Unit.Inch(0D);
@@ -366,9 +378,9 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             // panel4
             // 
-            this.panel4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(147.32000732421875D), Telerik.Reporting.Drawing.Unit.Mm(91.44000244140625D));
+            this.panel4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(147.32000732421875D), Telerik.Reporting.Drawing.Unit.Mm(139.69999694824219D));
             this.panel4.Name = "panel4";
-            this.panel4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.91897583007813D), Telerik.Reporting.Drawing.Unit.Mm(81D));
+            this.panel4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.92000579833984D), Telerik.Reporting.Drawing.Unit.Mm(81D));
             // 
             // quaryareaDataSource
             // 
@@ -381,7 +393,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.textBox3.Anchoring = ((Telerik.Reporting.AnchoringStyles)((Telerik.Reporting.AnchoringStyles.Left | Telerik.Reporting.AnchoringStyles.Right)));
             this.textBox3.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Inch(0.800000011920929D));
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.599961280822754D), Telerik.Reporting.Drawing.Unit.Inch(0.36000001430511475D));
+            this.textBox3.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.59996223449707D), Telerik.Reporting.Drawing.Unit.Inch(0.36000001430511475D));
             this.textBox3.Style.BorderColor.Bottom = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(137)))), ((int)(((byte)(104)))));
             this.textBox3.Style.BorderStyle.Bottom = Telerik.Reporting.Drawing.BorderType.Solid;
             this.textBox3.Style.Color = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(57)))), ((int)(((byte)(27)))));
@@ -412,7 +424,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.textBox6});
             this.panel5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Mm(0D));
             this.panel5.Name = "panel5";
-            this.panel5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.599959373474121D), Telerik.Reporting.Drawing.Unit.Mm(20.3179988861084D));
+            this.panel5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.59996223449707D), Telerik.Reporting.Drawing.Unit.Mm(20.3179988861084D));
             // 
             // textBox1
             // 
@@ -429,7 +441,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.shape5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0.0026791889686137438D), Telerik.Reporting.Drawing.Unit.Inch(0.60003942251205444D));
             this.shape5.Name = "shape5";
             this.shape5.ShapeType = new Telerik.Reporting.Drawing.Shapes.LineShape(Telerik.Reporting.Drawing.Shapes.LineDirection.EW);
-            this.shape5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.592677116394043D), Telerik.Reporting.Drawing.Unit.Point(3.75D));
+            this.shape5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.592679977416992D), Telerik.Reporting.Drawing.Unit.Point(3.75D));
             this.shape5.Stretch = true;
             this.shape5.Style.BorderStyle.Bottom = Telerik.Reporting.Drawing.BorderType.Solid;
             this.shape5.Style.BorderStyle.Top = Telerik.Reporting.Drawing.BorderType.Solid;
@@ -439,7 +451,7 @@ namespace Telerik.Reporting.Examples.CSharp
             // textBox6
             // 
             this.textBox6.Anchoring = Telerik.Reporting.AnchoringStyles.Right;
-            this.textBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.44999885559082D), Telerik.Reporting.Drawing.Unit.Inch(0.22485215961933136D));
+            this.textBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.45000171661377D), Telerik.Reporting.Drawing.Unit.Inch(0.22485215961933136D));
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(2.1199996471405029D), Telerik.Reporting.Drawing.Unit.Inch(0.22011041641235352D));
             this.textBox6.Style.Color = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(47)))), ((int)(((byte)(11)))));
@@ -456,7 +468,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis1.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis1.MinorGridLineStyle.Visible = false;
             this.graphAxis1.Name = "graphAxis1";
-            this.graphAxis1.Scale = numericalScale1;
+            this.graphAxis1.Scale = numericalScale2;
             this.graphAxis1.Style.Visible = false;
             // 
             // graphAxis2
@@ -468,9 +480,9 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis2.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis2.MinorGridLineStyle.Visible = false;
             this.graphAxis2.Name = "graphAxis2";
-            categoryScale1.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
-            categoryScale1.SpacingSlotCount = 0D;
-            this.graphAxis2.Scale = categoryScale1;
+            categoryScale2.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
+            categoryScale2.SpacingSlotCount = 0D;
+            this.graphAxis2.Scale = categoryScale2;
             this.graphAxis2.Style.Visible = false;
             // 
             // polarCoordinateSystem1
@@ -482,19 +494,19 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries2
             // 
             this.barSeries2.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked100;
-            graphGroup1.Name = "categoryGroup";
-            this.barSeries2.CategoryGroup = graphGroup1;
+            graphGroup3.Name = "categoryGroup";
+            this.barSeries2.CategoryGroup = graphGroup3;
             this.barSeries2.CoordinateSystem = this.polarCoordinateSystem1;
             this.barSeries2.DataPointLabel = "=Sum(Fields.LineTotal)";
             this.barSeries2.DataPointLabelStyle.Visible = false;
             this.barSeries2.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries2.DataPointStyle.Visible = true;
             this.barSeries2.LegendItem.Value = "= Fields.SalesPersonFullName";
-            graphGroup2.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
-            graphGroup2.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.SalesPersonFullName"));
-            graphGroup2.Name = "SalesPersonGroup";
-            graphGroup2.Sortings.Add(new Telerik.Reporting.Sorting("= Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Desc));
-            this.barSeries2.SeriesGroup = graphGroup2;
+            graphGroup4.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
+            graphGroup4.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.SalesPersonFullName"));
+            graphGroup4.Name = "SalesPersonGroup";
+            graphGroup4.Sortings.Add(new Telerik.Reporting.Sorting("= Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Desc));
+            this.barSeries2.SeriesGroup = graphGroup4;
             this.barSeries2.ToolTip.Text = "=Format(\'Total: ${0:N2} K\', Sum(Fields.LineTotal))";
             this.barSeries2.ToolTip.Title = "= Fields.SalesPersonFullName";
             this.barSeries2.X = "=Sum(Fields.LineTotal)";
@@ -509,7 +521,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis3.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis3.MinorGridLineStyle.Visible = false;
             this.graphAxis3.Name = "graphAxis3";
-            this.graphAxis3.Scale = numericalScale2;
+            this.graphAxis3.Scale = numericalScale3;
             this.graphAxis3.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
             // 
             // graphAxis4
@@ -522,8 +534,8 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis4.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis4.MinorGridLineStyle.Visible = false;
             this.graphAxis4.Name = "graphAxis4";
-            categoryScale2.SpacingSlotCount = 0.4D;
-            this.graphAxis4.Scale = categoryScale2;
+            categoryScale3.SpacingSlotCount = 0.4D;
+            this.graphAxis4.Scale = categoryScale3;
             this.graphAxis4.Size = Telerik.Reporting.Drawing.Unit.Inch(1.2999999523162842D);
             this.graphAxis4.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(7D);
             this.graphAxis4.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Right;
@@ -538,23 +550,23 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries1
             // 
             this.barSeries1.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked;
-            graphGroup3.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
-            graphGroup3.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.SalesPersonFullName"));
-            graphGroup3.Label = "= Fields.SalesPersonFullName";
-            graphGroup3.Name = "SalesPersonGroup";
-            graphGroup3.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries1.CategoryGroup = graphGroup3;
+            graphGroup5.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
+            graphGroup5.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.SalesPersonFullName"));
+            graphGroup5.Label = "= Fields.SalesPersonFullName";
+            graphGroup5.Name = "SalesPersonGroup";
+            graphGroup5.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries1.CategoryGroup = graphGroup5;
             this.barSeries1.CoordinateSystem = this.cartesianCoordinateSystem1;
             this.barSeries1.DataPointLabel = "=Sum(Fields.LineTotal)";
             this.barSeries1.DataPointLabelStyle.Visible = false;
             this.barSeries1.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries1.DataPointStyle.Visible = true;
             this.barSeries1.LegendItem.Value = "=\'Q\' + Quarter(Fields.OrderDate)";
-            graphGroup4.Groupings.Add(new Telerik.Reporting.Grouping("= Quarter(Fields.OrderDate)"));
-            graphGroup4.Label = "=\'Q\' + Quarter(Fields.OrderDate)";
-            graphGroup4.Name = "OrderDate.QuarterGroup";
-            graphGroup4.Sortings.Add(new Telerik.Reporting.Sorting("= Quarter(Fields.OrderDate)", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries1.SeriesGroup = graphGroup4;
+            graphGroup6.Groupings.Add(new Telerik.Reporting.Grouping("= Quarter(Fields.OrderDate)"));
+            graphGroup6.Label = "=\'Q\' + Quarter(Fields.OrderDate)";
+            graphGroup6.Name = "OrderDate.QuarterGroup";
+            graphGroup6.Sortings.Add(new Telerik.Reporting.Sorting("= Quarter(Fields.OrderDate)", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries1.SeriesGroup = graphGroup6;
             this.barSeries1.ToolTip.Text = "=Format(\'${0:N2} K\', Sum(Fields.LineTotal))";
             this.barSeries1.ToolTip.Title = "=Format(\'Q{0} results for {1}\', Quarter(Fields.OrderDate), Fields.SalesPersonFull" +
     "Name)";
@@ -570,7 +582,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis5.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis5.MinorGridLineStyle.Visible = false;
             this.graphAxis5.Name = "graphAxis3";
-            this.graphAxis5.Scale = numericalScale3;
+            this.graphAxis5.Scale = numericalScale4;
             this.graphAxis5.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
             // 
             // graphAxis6
@@ -583,8 +595,8 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis6.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis6.MinorGridLineStyle.Visible = false;
             this.graphAxis6.Name = "graphAxis4";
-            categoryScale3.SpacingSlotCount = 0.4D;
-            this.graphAxis6.Scale = categoryScale3;
+            categoryScale4.SpacingSlotCount = 0.4D;
+            this.graphAxis6.Scale = categoryScale4;
             this.graphAxis6.Size = Telerik.Reporting.Drawing.Unit.Inch(1.2999999523162842D);
             this.graphAxis6.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(7D);
             this.graphAxis6.Style.Visible = true;
@@ -598,22 +610,22 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries3
             // 
             this.barSeries3.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked;
-            graphGroup5.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
-            graphGroup5.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.StoreName"));
-            graphGroup5.Name = "ProductNameGroup";
-            graphGroup5.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries3.CategoryGroup = graphGroup5;
+            graphGroup7.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
+            graphGroup7.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.StoreName"));
+            graphGroup7.Name = "ProductNameGroup";
+            graphGroup7.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries3.CategoryGroup = graphGroup7;
             this.barSeries3.CoordinateSystem = this.cartesianCoordinateSystem2;
             this.barSeries3.DataPointLabel = "=Sum(Fields.LineTotal)";
             this.barSeries3.DataPointLabelStyle.Visible = false;
             this.barSeries3.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries3.DataPointStyle.Visible = true;
             this.barSeries3.LegendItem.Value = "=\'Q\' + Quarter(Fields.OrderDate)";
-            graphGroup6.Groupings.Add(new Telerik.Reporting.Grouping("= Quarter(Fields.OrderDate)"));
-            graphGroup6.Label = "=\'Q\' + Quarter(Fields.OrderDate)";
-            graphGroup6.Name = "OrderDate.QuarterGroup";
-            graphGroup6.Sortings.Add(new Telerik.Reporting.Sorting("= Quarter(Fields.OrderDate)", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries3.SeriesGroup = graphGroup6;
+            graphGroup8.Groupings.Add(new Telerik.Reporting.Grouping("= Quarter(Fields.OrderDate)"));
+            graphGroup8.Label = "=\'Q\' + Quarter(Fields.OrderDate)";
+            graphGroup8.Name = "OrderDate.QuarterGroup";
+            graphGroup8.Sortings.Add(new Telerik.Reporting.Sorting("= Quarter(Fields.OrderDate)", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries3.SeriesGroup = graphGroup8;
             this.barSeries3.ToolTip.Text = "=Format(\'${0:N2} K\', Sum(Fields.LineTotal))";
             this.barSeries3.ToolTip.Title = "=Format(\'Q{0} results for {1}\', Quarter(Fields.OrderDate), Fields.StoreName)";
             this.barSeries3.X = "=Sum(Fields.LineTotal)";
@@ -627,7 +639,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis7.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis7.MinorGridLineStyle.Visible = false;
             this.graphAxis7.Name = "graphAxis1";
-            this.graphAxis7.Scale = numericalScale4;
+            this.graphAxis7.Scale = numericalScale5;
             this.graphAxis7.Style.Visible = false;
             // 
             // graphAxis8
@@ -639,9 +651,9 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis8.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis8.MinorGridLineStyle.Visible = false;
             this.graphAxis8.Name = "graphAxis2";
-            categoryScale4.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
-            categoryScale4.SpacingSlotCount = 0D;
-            this.graphAxis8.Scale = categoryScale4;
+            categoryScale5.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
+            categoryScale5.SpacingSlotCount = 0D;
+            this.graphAxis8.Scale = categoryScale5;
             this.graphAxis8.Style.Visible = false;
             // 
             // polarCoordinateSystem2
@@ -653,19 +665,19 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries4
             // 
             this.barSeries4.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked100;
-            graphGroup7.Name = "categoryGroup";
-            this.barSeries4.CategoryGroup = graphGroup7;
+            graphGroup9.Name = "categoryGroup";
+            this.barSeries4.CategoryGroup = graphGroup9;
             this.barSeries4.CoordinateSystem = this.polarCoordinateSystem2;
             this.barSeries4.DataPointLabel = "=Sum(Fields.LineTotal)";
             this.barSeries4.DataPointLabelStyle.Visible = false;
             this.barSeries4.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries4.DataPointStyle.Visible = true;
             this.barSeries4.LegendItem.Value = "= Fields.StoreName";
-            graphGroup8.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
-            graphGroup8.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.StoreName"));
-            graphGroup8.Name = "ProductStoreGroup";
-            graphGroup8.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Desc));
-            this.barSeries4.SeriesGroup = graphGroup8;
+            graphGroup10.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
+            graphGroup10.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.StoreName"));
+            graphGroup10.Name = "ProductStoreGroup";
+            graphGroup10.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Desc));
+            this.barSeries4.SeriesGroup = graphGroup10;
             this.barSeries4.ToolTip.Text = "=Format(\'Total: ${0:N2} K\', Sum(Fields.LineTotal))";
             this.barSeries4.ToolTip.Title = "=Fields.StoreName";
             this.barSeries4.X = "=Sum(Fields.LineTotal)";
@@ -680,7 +692,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis11.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis11.MinorGridLineStyle.Visible = false;
             this.graphAxis11.Name = "graphAxis3";
-            this.graphAxis11.Scale = numericalScale5;
+            this.graphAxis11.Scale = numericalScale6;
             this.graphAxis11.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
             this.graphAxis11.TitlePlacement = Telerik.Reporting.GraphAxisTitlePlacement.Auto;
             // 
@@ -694,8 +706,8 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis12.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis12.MinorGridLineStyle.Visible = false;
             this.graphAxis12.Name = "graphAxis4";
-            categoryScale5.SpacingSlotCount = 0.4D;
-            this.graphAxis12.Scale = categoryScale5;
+            categoryScale6.SpacingSlotCount = 0.4D;
+            this.graphAxis12.Scale = categoryScale6;
             this.graphAxis12.Size = Telerik.Reporting.Drawing.Unit.Inch(1.2999999523162842D);
             this.graphAxis12.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(7D);
             this.graphAxis12.Style.Visible = true;
@@ -709,22 +721,22 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries6
             // 
             this.barSeries6.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked;
-            graphGroup9.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
-            graphGroup9.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductName"));
-            graphGroup9.Name = "ProductNameGroup";
-            graphGroup9.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries6.CategoryGroup = graphGroup9;
+            graphGroup11.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
+            graphGroup11.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductName"));
+            graphGroup11.Name = "ProductNameGroup";
+            graphGroup11.Sortings.Add(new Telerik.Reporting.Sorting("=Sum(Fields.LineTotal)", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries6.CategoryGroup = graphGroup11;
             this.barSeries6.CoordinateSystem = this.cartesianCoordinateSystem3;
             this.barSeries6.DataPointLabel = "=Sum(Fields.LineTotal)";
             this.barSeries6.DataPointLabelStyle.Visible = false;
             this.barSeries6.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries6.DataPointStyle.Visible = true;
             this.barSeries6.LegendItem.Value = "=\'Q\' + Quarter(Fields.OrderDate)";
-            graphGroup10.Groupings.Add(new Telerik.Reporting.Grouping("= Quarter(Fields.OrderDate)"));
-            graphGroup10.Label = "=\'Q\' + Quarter(Fields.OrderDate)";
-            graphGroup10.Name = "OrderDate.QuarterGroup";
-            graphGroup10.Sortings.Add(new Telerik.Reporting.Sorting("= Quarter(Fields.OrderDate)", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries6.SeriesGroup = graphGroup10;
+            graphGroup12.Groupings.Add(new Telerik.Reporting.Grouping("= Quarter(Fields.OrderDate)"));
+            graphGroup12.Label = "=\'Q\' + Quarter(Fields.OrderDate)";
+            graphGroup12.Name = "OrderDate.QuarterGroup";
+            graphGroup12.Sortings.Add(new Telerik.Reporting.Sorting("= Quarter(Fields.OrderDate)", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries6.SeriesGroup = graphGroup12;
             this.barSeries6.ToolTip.Text = "=Format(\'${0:N2} K\', Sum(Fields.LineTotal))";
             this.barSeries6.ToolTip.Title = "=Format(\'Q{0} results for {1}\', Quarter(Fields.OrderDate), Fields.ProductName)";
             this.barSeries6.X = "=Sum(Fields.LineTotal)";
@@ -738,7 +750,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis9.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis9.MinorGridLineStyle.Visible = false;
             this.graphAxis9.Name = "graphAxis1";
-            this.graphAxis9.Scale = numericalScale6;
+            this.graphAxis9.Scale = numericalScale7;
             this.graphAxis9.Style.Visible = false;
             // 
             // graphAxis10
@@ -750,9 +762,9 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis10.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis10.MinorGridLineStyle.Visible = false;
             this.graphAxis10.Name = "graphAxis2";
-            categoryScale6.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
-            categoryScale6.SpacingSlotCount = 0D;
-            this.graphAxis10.Scale = categoryScale6;
+            categoryScale7.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
+            categoryScale7.SpacingSlotCount = 0D;
+            this.graphAxis10.Scale = categoryScale7;
             this.graphAxis10.Style.Visible = false;
             // 
             // polarCoordinateSystem3
@@ -764,19 +776,19 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries5
             // 
             this.barSeries5.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked100;
-            graphGroup11.Name = "categoryGroup";
-            this.barSeries5.CategoryGroup = graphGroup11;
+            graphGroup13.Name = "categoryGroup";
+            this.barSeries5.CategoryGroup = graphGroup13;
             this.barSeries5.CoordinateSystem = this.polarCoordinateSystem3;
             this.barSeries5.DataPointLabel = "=Sum(Fields.LineTotal)";
             this.barSeries5.DataPointLabelStyle.Visible = false;
             this.barSeries5.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries5.DataPointStyle.Visible = true;
             this.barSeries5.LegendItem.Value = "=Fields.ProductName";
-            graphGroup12.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
-            graphGroup12.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductName"));
-            graphGroup12.Name = "ProductNameGroup";
-            graphGroup12.Sortings.Add(new Telerik.Reporting.Sorting("=Fields.ProductName", Telerik.Reporting.SortDirection.Asc));
-            this.barSeries5.SeriesGroup = graphGroup12;
+            graphGroup14.Filters.Add(new Telerik.Reporting.Filter("=Sum(Fields.LineTotal)", Telerik.Reporting.FilterOperator.TopN, "=5"));
+            graphGroup14.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductName"));
+            graphGroup14.Name = "ProductNameGroup";
+            graphGroup14.Sortings.Add(new Telerik.Reporting.Sorting("=Fields.ProductName", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries5.SeriesGroup = graphGroup14;
             this.barSeries5.ToolTip.Text = "=Format(\'Total: ${0:N2} K\', Sum(Fields.LineTotal))";
             this.barSeries5.ToolTip.Title = "=Fields.ProductName";
             this.barSeries5.X = "=Sum(Fields.LineTotal)";
@@ -790,7 +802,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis13.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis13.MinorGridLineStyle.Visible = false;
             this.graphAxis13.Name = "graphAxis1";
-            this.graphAxis13.Scale = numericalScale7;
+            this.graphAxis13.Scale = numericalScale8;
             this.graphAxis13.Style.Visible = false;
             // 
             // graphAxis14
@@ -802,9 +814,9 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis14.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis14.MinorGridLineStyle.Visible = false;
             this.graphAxis14.Name = "graphAxis2";
-            categoryScale7.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
-            categoryScale7.SpacingSlotCount = 0D;
-            this.graphAxis14.Scale = categoryScale7;
+            categoryScale8.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
+            categoryScale8.SpacingSlotCount = 0D;
+            this.graphAxis14.Scale = categoryScale8;
             this.graphAxis14.Style.Visible = false;
             // 
             // polarCoordinateSystem4
@@ -816,14 +828,14 @@ namespace Telerik.Reporting.Examples.CSharp
             // barSeries7
             // 
             this.barSeries7.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked100;
-            graphGroup13.Name = "categoryGroup";
-            this.barSeries7.CategoryGroup = graphGroup13;
+            graphGroup15.Name = "categoryGroup";
+            this.barSeries7.CategoryGroup = graphGroup15;
             this.barSeries7.CoordinateSystem = this.polarCoordinateSystem4;
             this.barSeries7.DataPointLabelStyle.Visible = false;
             this.barSeries7.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
             this.barSeries7.DataPointStyle.Visible = true;
             this.barSeries7.LegendItem.Value = "= Fields.Road_Section";
-            this.barSeries7.SeriesGroup = graphGroup14;
+            this.barSeries7.SeriesGroup = graphGroup16;
             // 
             // graphAxis16
             // 
@@ -834,9 +846,9 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis16.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis16.MinorGridLineStyle.Visible = false;
             this.graphAxis16.Name = "graphAxis16";
-            categoryScale8.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
-            categoryScale8.SpacingSlotCount = 0D;
-            this.graphAxis16.Scale = categoryScale8;
+            categoryScale9.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
+            categoryScale9.SpacingSlotCount = 0D;
+            this.graphAxis16.Scale = categoryScale9;
             this.graphAxis16.Style.Visible = false;
             // 
             // graphAxis15
@@ -848,7 +860,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis15.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis15.MinorGridLineStyle.Visible = false;
             this.graphAxis15.Name = "graphAxis15";
-            this.graphAxis15.Scale = numericalScale8;
+            this.graphAxis15.Scale = numericalScale9;
             this.graphAxis15.Style.Visible = false;
             // 
             // polarCoordinateSystem5
@@ -866,8 +878,89 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis17.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
             this.graphAxis17.MinorGridLineStyle.Visible = false;
             this.graphAxis17.Name = "graphAxis17";
-            this.graphAxis17.Scale = numericalScale9;
+            this.graphAxis17.Scale = numericalScale10;
             this.graphAxis17.Style.Visible = false;
+            // 
+            // graph1
+            // 
+            graphGroup1.Name = "categoryGroup";
+            this.graph1.CategoryGroups.Add(graphGroup1);
+            this.graph1.CoordinateSystems.Add(this.polarCoordinateSystem6);
+            this.graph1.DataSource = this.quaryareaDataSource;
+            this.graph1.Legend.Style.LineColor = System.Drawing.Color.LightGray;
+            this.graph1.Legend.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            this.graph1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0D), Telerik.Reporting.Drawing.Unit.Mm(2.535996675491333D));
+            this.graph1.Name = "graph1";
+            this.graph1.PlotAreaStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graph1.PlotAreaStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            this.graph1.Series.Add(this.barSeries8);
+            this.graph1.SeriesGroups.Add(graphGroup2);
+            this.graph1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(121.15804290771484D), Telerik.Reporting.Drawing.Unit.Mm(124.45600891113281D));
+            this.graph1.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            this.graph1.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            this.graph1.Style.Padding.Right = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            this.graph1.Style.Padding.Top = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            graphTitle1.Position = Telerik.Reporting.GraphItemPosition.TopCenter;
+            graphTitle1.Style.LineColor = System.Drawing.Color.LightGray;
+            graphTitle1.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            graphTitle1.Text = "graph1";
+            this.graph1.Titles.Add(graphTitle1);
+            // 
+            // polarCoordinateSystem6
+            // 
+            this.polarCoordinateSystem6.AngularAxis = this.graphAxis18;
+            this.polarCoordinateSystem6.Name = "polarCoordinateSystem6";
+            this.polarCoordinateSystem6.RadialAxis = this.graphAxis19;
+            // 
+            // graphAxis18
+            // 
+            this.graphAxis18.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis18.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis18.MajorGridLineStyle.Visible = false;
+            this.graphAxis18.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis18.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis18.MinorGridLineStyle.Visible = false;
+            this.graphAxis18.Name = "graphAxis18";
+            this.graphAxis18.Scale = numericalScale1;
+            this.graphAxis18.Style.Visible = false;
+            // 
+            // graphAxis19
+            // 
+            this.graphAxis19.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis19.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis19.MajorGridLineStyle.Visible = false;
+            this.graphAxis19.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis19.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis19.MinorGridLineStyle.Visible = false;
+            this.graphAxis19.Name = "graphAxis19";
+            categoryScale1.PositionMode = Telerik.Reporting.AxisPositionMode.OnTicks;
+            categoryScale1.SpacingSlotCount = 0D;
+            this.graphAxis19.Scale = categoryScale1;
+            this.graphAxis19.Style.Visible = false;
+            // 
+            // barSeries8
+            // 
+            this.barSeries8.ArrangeMode = Telerik.Reporting.GraphSeriesArrangeMode.Stacked100;
+            this.barSeries8.CategoryGroup = graphGroup1;
+            this.barSeries8.CoordinateSystem = this.polarCoordinateSystem6;
+            this.barSeries8.DataPointLabel = "= (Fields.LL) / CDbl(Exec(\'graph1\', (Fields.LL)))";
+            this.barSeries8.DataPointLabelAlignment = Telerik.Reporting.BarDataPointLabelAlignment.OutsideColumn;
+            this.barSeries8.DataPointLabelConnectorStyle.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Point(2D);
+            this.barSeries8.DataPointLabelConnectorStyle.Padding.Top = Telerik.Reporting.Drawing.Unit.Point(2D);
+            this.barSeries8.DataPointLabelFormat = "{0:P}";
+            this.barSeries8.DataPointLabelOffset = Telerik.Reporting.Drawing.Unit.Mm(5D);
+            this.barSeries8.DataPointLabelStyle.Visible = true;
+            this.barSeries8.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            this.barSeries8.DataPointStyle.Visible = true;
+            this.barSeries8.LegendItem.Value = "= Fields.Quarry_Area";
+            this.barSeries8.Name = "barSeries8";
+            graphGroup2.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.Quarry_Area"));
+            graphGroup2.Name = "quarry_AreaGroup";
+            graphGroup2.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.Quarry_Area", Telerik.Reporting.SortDirection.Asc));
+            this.barSeries8.SeriesGroup = graphGroup2;
+            this.barSeries8.ToolTip.Text = "= Format(\'{0:P}\', (Fields.LL) / CDbl(Exec(\'graph1\', (Fields.LL))))";
+            this.barSeries8.ToolTip.Title = "= Fields.Quarry_Area";
+            this.barSeries8.X = "= (Fields.LL)";
             // 
             // Dashboard
             // 
@@ -1086,5 +1179,10 @@ namespace Telerik.Reporting.Examples.CSharp
         private Reporting.TextBox textBox10;
         private Reporting.TextBox textBox11;
         private Reporting.TextBox textBox12;
+        private Graph graph1;
+        private PolarCoordinateSystem polarCoordinateSystem6;
+        private GraphAxis graphAxis18;
+        private GraphAxis graphAxis19;
+        private BarSeries barSeries8;
     }
 }
