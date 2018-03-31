@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="piandllindexDataSource.SelectCommand" xml:space="preserve">
+    <value>SELECT        Purpose_of_Material, Road_Section, Quarry_Area, Chanage, Offset_Distance, Eatimated_Quantiy, LL, PI, SC, PP, GM, OMC, PM, CBR, MDD, SWELL
+FROM            Summary_Report_View
+ORDER BY Quarry_Area</value>
+  </data>
   <data name="quaryareaDataSource.SelectCommand" xml:space="preserve">
     <value>SELECT        Location.ID, Location.Material_Description, Location.District, Location.Road_Section, Location.Quarry_Area, Location.Change, Location.Offset_Distance, 
                          Location.Latitude, Location.Longitude, Location.Elevation, Location.Estimated_Quantity, Location.Purpose, Location.Test_Result, Location.Photo, 
@@ -126,7 +131,14 @@
                          Summary_Report.Purpose_of_Material
 FROM            Location INNER JOIN
                          Summary_Report ON Location.ID = Summary_Report.Location_ID
-ORDER BY Location.ID, Summary_Report.Location_ID</value>
+ORDER BY Summary_Report.Location_ID, Location.Quarry_Area</value>
+  </data>
+  <data name="summerytestresultDataSource.SelectCommand" xml:space="preserve">
+    <value>SELECT        Location.Quarry_Area, Location.Change, Location.Offset_Distance, Summary_Report.Eatimated_Quantiy, Summary_Report.SC, Summary_Report.PP, 
+                         Summary_Report.GM, Summary_Report.PM, Summary_Report.OMC, Summary_Report.MDD, Summary_Report.CBR, Summary_Report.SWELL
+FROM            Summary_Report INNER JOIN
+                         Location ON Summary_Report.Location_ID = Location.ID
+ORDER BY Location.Quarry_Area</value>
   </data>
   <metadata name="$this.ShowSnapGrid" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

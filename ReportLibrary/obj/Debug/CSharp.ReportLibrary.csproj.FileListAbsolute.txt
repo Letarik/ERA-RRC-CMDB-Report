@@ -29,16 +29,16 @@ C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\ReportLibrary\obj\Deb
 C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll
 C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.pdb
 C:\Program Files\Telerik\Reporting R2 2017\Examples\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll.licenses
+C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\Telerik.Reporting.Examples.CSharp.Dashboard.resources
+C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\Telerik.Reporting.Examples.CSharp.ReportCatalog.resources
+C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.csproj.GenerateResource.Cache
+C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll.licenses
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\bin\Debug\CSharp.ReportLibrary.dll.config
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\bin\Debug\CSharp.ReportLibrary.dll
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\bin\Debug\CSharp.ReportLibrary.pdb
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\bin\Debug\Telerik.Reporting.dll
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\bin\Debug\Telerik.Reporting.pdb
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\bin\Debug\Telerik.Reporting.xml
-C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\Telerik.Reporting.Examples.CSharp.Dashboard.resources
-C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\Telerik.Reporting.Examples.CSharp.ReportCatalog.resources
-C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.csproj.GenerateResource.Cache
-C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll.licenses
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.dll
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.pdb
 C:\Users\LetarikT\Desktop\CSharp\ReportLibrary\obj\Debug\CSharp.ReportLibrary.csprojResolveAssemblyReference.cache
