@@ -39,6 +39,11 @@ namespace Telerik.Reporting.Examples.CSharp
             Telerik.Reporting.TableGroup tableGroup14 = new Telerik.Reporting.TableGroup();
             Telerik.Reporting.TableGroup tableGroup15 = new Telerik.Reporting.TableGroup();
             Telerik.Reporting.TableGroup tableGroup16 = new Telerik.Reporting.TableGroup();
+            Telerik.Reporting.GraphGroup graphGroup5 = new Telerik.Reporting.GraphGroup();
+            Telerik.Reporting.GraphTitle graphTitle2 = new Telerik.Reporting.GraphTitle();
+            Telerik.Reporting.NumericalScale numericalScale2 = new Telerik.Reporting.NumericalScale();
+            Telerik.Reporting.CategoryScale categoryScale2 = new Telerik.Reporting.CategoryScale();
+            Telerik.Reporting.GraphGroup graphGroup6 = new Telerik.Reporting.GraphGroup();
             Telerik.Reporting.NumericalScale numericalScale3 = new Telerik.Reporting.NumericalScale();
             Telerik.Reporting.CategoryScale categoryScale3 = new Telerik.Reporting.CategoryScale();
             Telerik.Reporting.GraphGroup graphGroup7 = new Telerik.Reporting.GraphGroup();
@@ -70,11 +75,6 @@ namespace Telerik.Reporting.Examples.CSharp
             Telerik.Reporting.CategoryScale categoryScale10 = new Telerik.Reporting.CategoryScale();
             Telerik.Reporting.NumericalScale numericalScale10 = new Telerik.Reporting.NumericalScale();
             Telerik.Reporting.NumericalScale numericalScale11 = new Telerik.Reporting.NumericalScale();
-            Telerik.Reporting.GraphGroup graphGroup5 = new Telerik.Reporting.GraphGroup();
-            Telerik.Reporting.GraphTitle graphTitle2 = new Telerik.Reporting.GraphTitle();
-            Telerik.Reporting.NumericalScale numericalScale2 = new Telerik.Reporting.NumericalScale();
-            Telerik.Reporting.CategoryScale categoryScale2 = new Telerik.Reporting.CategoryScale();
-            Telerik.Reporting.GraphGroup graphGroup6 = new Telerik.Reporting.GraphGroup();
             Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
             Telerik.Reporting.Drawing.StyleRule styleRule1 = new Telerik.Reporting.Drawing.StyleRule();
             Telerik.Reporting.Drawing.StyleRule styleRule2 = new Telerik.Reporting.Drawing.StyleRule();
@@ -148,6 +148,14 @@ namespace Telerik.Reporting.Examples.CSharp
             this.textBox39 = new Telerik.Reporting.TextBox();
             this.summerytestresultDataSource = new Telerik.Reporting.SqlDataSource();
             this.textBox2 = new Telerik.Reporting.TextBox();
+            this.panel4 = new Telerik.Reporting.Panel();
+            this.graph2 = new Telerik.Reporting.Graph();
+            this.cartesianCoordinateSystem4 = new Telerik.Reporting.CartesianCoordinateSystem();
+            this.graphAxis20 = new Telerik.Reporting.GraphAxis();
+            this.graphAxis21 = new Telerik.Reporting.GraphAxis();
+            this.lineSeries1 = new Telerik.Reporting.LineSeries();
+            this.textBox19 = new Telerik.Reporting.TextBox();
+            this.textBox22 = new Telerik.Reporting.TextBox();
             this.textBox3 = new Telerik.Reporting.TextBox();
             this.textBox5 = new Telerik.Reporting.TextBox();
             this.reportHeaderSection = new Telerik.Reporting.ReportHeaderSection();
@@ -187,12 +195,6 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis15 = new Telerik.Reporting.GraphAxis();
             this.polarCoordinateSystem5 = new Telerik.Reporting.PolarCoordinateSystem();
             this.graphAxis17 = new Telerik.Reporting.GraphAxis();
-            this.graph2 = new Telerik.Reporting.Graph();
-            this.cartesianCoordinateSystem4 = new Telerik.Reporting.CartesianCoordinateSystem();
-            this.graphAxis20 = new Telerik.Reporting.GraphAxis();
-            this.graphAxis21 = new Telerik.Reporting.GraphAxis();
-            this.lineSeries1 = new Telerik.Reporting.LineSeries();
-            this.panel4 = new Telerik.Reporting.Panel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // textBox7
@@ -295,14 +297,16 @@ namespace Telerik.Reporting.Examples.CSharp
             // 
             // detail
             // 
-            this.detail.Height = Telerik.Reporting.Drawing.Unit.Inch(18.80000114440918D);
+            this.detail.Height = Telerik.Reporting.Drawing.Unit.Inch(19.300003051757812D);
             this.detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
             this.SummeryTestResult,
             this.panel1,
             this.panel2,
             this.panel3,
             this.textBox2,
-            this.panel4});
+            this.panel4,
+            this.textBox19,
+            this.textBox22});
             this.detail.Name = "detail";
             // 
             // SummeryTestResult
@@ -336,9 +340,9 @@ namespace Telerik.Reporting.Examples.CSharp
             this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(35.875034332275391D)));
             this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(32.170860290527344D)));
             this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(34.023002624511719D)));
-            this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(21.587490081787109D)));
-            this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(12.062497138977051D)));
-            this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(11.200697898864746D)));
+            this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(21.587491989135742D)));
+            this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(12.062498092651367D)));
+            this.table1.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(11.200698852539063D)));
             this.table1.Body.Rows.Add(new Telerik.Reporting.TableBodyRow(Telerik.Reporting.Drawing.Unit.Mm(5D)));
             this.table1.Body.SetCellContent(0, 0, this.textBox13);
             this.table1.Body.SetCellContent(0, 1, this.textBox14);
@@ -558,9 +562,9 @@ namespace Telerik.Reporting.Examples.CSharp
             // table2
             // 
             this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(32.0318603515625D)));
-            this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(10.609368324279785D)));
-            this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(10.609368324279785D)));
-            this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(10.609368324279785D)));
+            this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(10.609369277954102D)));
+            this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(10.609369277954102D)));
+            this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(10.609369277954102D)));
             this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(14.566827774047852D)));
             this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(13.264436721801758D)));
             this.table2.Body.Columns.Add(new Telerik.Reporting.TableBodyColumn(Telerik.Reporting.Drawing.Unit.Mm(15.581206321716309D)));
@@ -704,12 +708,134 @@ namespace Telerik.Reporting.Examples.CSharp
             this.textBox2.StyleName = "legend";
             this.textBox2.Value = "Others Test Result Summery";
             // 
+            // panel4
+            // 
+            this.panel4.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+            this.graph2});
+            this.panel4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0.069052629172801971D), Telerik.Reporting.Drawing.Unit.Mm(279.4000244140625D));
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(147.24894714355469D), Telerik.Reporting.Drawing.Unit.Mm(149.86000061035156D));
+            // 
+            // graph2
+            // 
+            graphGroup5.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.Quarry_Area"));
+            graphGroup5.Name = "quarry_AreaGroup1";
+            graphGroup5.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.Quarry_Area", Telerik.Reporting.SortDirection.Asc));
+            this.graph2.CategoryGroups.Add(graphGroup5);
+            this.graph2.CoordinateSystems.Add(this.cartesianCoordinateSystem4);
+            this.graph2.DataSource = this.summerytestresultDataSource;
+            this.graph2.Legend.Height = Telerik.Reporting.Drawing.Unit.Mm(35D);
+            this.graph2.Legend.Position = Telerik.Reporting.GraphItemPosition.TopCenter;
+            this.graph2.Legend.Style.Font.Name = "Candara";
+            this.graph2.Legend.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
+            this.graph2.Legend.Style.LineColor = System.Drawing.Color.LightGray;
+            this.graph2.Legend.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            this.graph2.Legend.Width = Telerik.Reporting.Drawing.Unit.Mm(50D);
+            this.graph2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0.0010012307902798057D), Telerik.Reporting.Drawing.Unit.Mm(0.0010012307902798057D));
+            this.graph2.Name = "graph2";
+            this.graph2.PlotAreaStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graph2.PlotAreaStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            this.graph2.Series.Add(this.lineSeries1);
+            this.graph2.SeriesGroups.Add(graphGroup6);
+            this.graph2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(147.24795532226563D), Telerik.Reporting.Drawing.Unit.Mm(147.31900024414063D));
+            this.graph2.Style.Font.Name = "Candara";
+            this.graph2.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
+            this.graph2.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            this.graph2.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            this.graph2.Style.Padding.Right = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            this.graph2.Style.Padding.Top = Telerik.Reporting.Drawing.Unit.Pixel(10D);
+            graphTitle2.Height = Telerik.Reporting.Drawing.Unit.Mm(40D);
+            graphTitle2.Position = Telerik.Reporting.GraphItemPosition.TopCenter;
+            graphTitle2.Style.Font.Bold = false;
+            graphTitle2.Style.Font.Name = "Candara";
+            graphTitle2.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(12D);
+            graphTitle2.Style.Font.Underline = true;
+            graphTitle2.Style.LineColor = System.Drawing.Color.LightGray;
+            graphTitle2.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            graphTitle2.Text = "CBR";
+            graphTitle2.Width = Telerik.Reporting.Drawing.Unit.Mm(50D);
+            this.graph2.Titles.Add(graphTitle2);
+            // 
+            // cartesianCoordinateSystem4
+            // 
+            this.cartesianCoordinateSystem4.Name = "cartesianCoordinateSystem4";
+            this.cartesianCoordinateSystem4.XAxis = this.graphAxis20;
+            this.cartesianCoordinateSystem4.YAxis = this.graphAxis21;
+            // 
+            // graphAxis20
+            // 
+            this.graphAxis20.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis20.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis20.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis20.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis20.MinorGridLineStyle.Visible = false;
+            this.graphAxis20.Name = "graphAxis20";
+            this.graphAxis20.Scale = numericalScale2;
+            // 
+            // graphAxis21
+            // 
+            this.graphAxis21.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis21.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis21.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
+            this.graphAxis21.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.graphAxis21.MinorGridLineStyle.Visible = false;
+            this.graphAxis21.Name = "graphAxis21";
+            this.graphAxis21.Scale = categoryScale2;
+            this.graphAxis21.Style.Font.Name = "Candara";
+            this.graphAxis21.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
+            // 
+            // lineSeries1
+            // 
+            this.lineSeries1.ArrangeByAxis = this.graphAxis21;
+            this.lineSeries1.CategoryGroup = graphGroup5;
+            this.lineSeries1.CoordinateSystem = this.cartesianCoordinateSystem4;
+            this.lineSeries1.DataPointLabel = "= Count(Fields.CBR)";
+            this.lineSeries1.DataPointLabelStyle.Visible = false;
+            this.lineSeries1.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
+            this.lineSeries1.DataPointStyle.Visible = false;
+            this.lineSeries1.LegendItem.Value = "= Fields.Quarry_Area";
+            this.lineSeries1.LineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
+            this.lineSeries1.LineStyle.Visible = true;
+            this.lineSeries1.MarkerMaxSize = Telerik.Reporting.Drawing.Unit.Pixel(50D);
+            this.lineSeries1.MarkerMinSize = Telerik.Reporting.Drawing.Unit.Pixel(5D);
+            this.lineSeries1.MarkerSize = Telerik.Reporting.Drawing.Unit.Pixel(5D);
+            graphGroup6.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.CBR"));
+            graphGroup6.Name = "cBRGroup";
+            graphGroup6.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.CBR", Telerik.Reporting.SortDirection.Asc));
+            this.lineSeries1.SeriesGroup = graphGroup6;
+            this.lineSeries1.Size = null;
+            this.lineSeries1.ToolTip.Text = "= Count(Fields.CBR)";
+            this.lineSeries1.ToolTip.Title = "= Fields.CBR";
+            this.lineSeries1.X = "= Count(Fields.CBR)";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.40000057220459D), Telerik.Reporting.Drawing.Unit.Inch(16.900001525878906D));
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(2.204545259475708D), Telerik.Reporting.Drawing.Unit.Inch(0.29999873042106628D));
+            this.textBox19.Style.BorderStyle.Bottom = Telerik.Reporting.Drawing.BorderType.Solid;
+            this.textBox19.Style.Font.Name = "Cambria";
+            this.textBox19.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(12D);
+            this.textBox19.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
+            this.textBox19.Value = "{Now().Year}";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Inch(16.900079727172852D));
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(8.3999214172363281D), Telerik.Reporting.Drawing.Unit.Inch(0.29999873042106628D));
+            this.textBox22.Style.BorderStyle.Bottom = Telerik.Reporting.Drawing.BorderType.Solid;
+            this.textBox22.Style.Font.Name = "Candara";
+            this.textBox22.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(12D);
+            this.textBox22.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Right;
+            this.textBox22.Value = "Ethiopian Roads Authoirty-Federal Road Construction Material Database ";
+            // 
             // textBox3
             // 
             this.textBox3.Anchoring = ((Telerik.Reporting.AnchoringStyles)((Telerik.Reporting.AnchoringStyles.Left | Telerik.Reporting.AnchoringStyles.Right)));
             this.textBox3.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Inch(0.800000011920929D));
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.559455871582031D), Telerik.Reporting.Drawing.Unit.Inch(0.36000001430511475D));
+            this.textBox3.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.604034423828125D), Telerik.Reporting.Drawing.Unit.Inch(0.36000001430511475D));
             this.textBox3.Style.BorderColor.Bottom = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(137)))), ((int)(((byte)(104)))));
             this.textBox3.Style.BorderStyle.Bottom = Telerik.Reporting.Drawing.BorderType.Solid;
             this.textBox3.Style.Color = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(57)))), ((int)(((byte)(27)))));
@@ -740,7 +866,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.textBox6});
             this.panel5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0D), Telerik.Reporting.Drawing.Unit.Mm(0D));
             this.panel5.Name = "panel5";
-            this.panel5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.559455871582031D), Telerik.Reporting.Drawing.Unit.Mm(20.3179988861084D));
+            this.panel5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.604034423828125D), Telerik.Reporting.Drawing.Unit.Mm(20.3179988861084D));
             // 
             // textBox1
             // 
@@ -757,7 +883,7 @@ namespace Telerik.Reporting.Examples.CSharp
             this.shape5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0.0026791889686137438D), Telerik.Reporting.Drawing.Unit.Inch(0.60003942251205444D));
             this.shape5.Name = "shape5";
             this.shape5.ShapeType = new Telerik.Reporting.Drawing.Shapes.LineShape(Telerik.Reporting.Drawing.Shapes.LineDirection.EW);
-            this.shape5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.552173614501953D), Telerik.Reporting.Drawing.Unit.Point(3.75D));
+            this.shape5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(10.596752166748047D), Telerik.Reporting.Drawing.Unit.Point(3.75D));
             this.shape5.Stretch = true;
             this.shape5.Style.BorderStyle.Bottom = Telerik.Reporting.Drawing.BorderType.Solid;
             this.shape5.Style.BorderStyle.Top = Telerik.Reporting.Drawing.BorderType.Solid;
@@ -767,7 +893,7 @@ namespace Telerik.Reporting.Examples.CSharp
             // textBox6
             // 
             this.textBox6.Anchoring = Telerik.Reporting.AnchoringStyles.Right;
-            this.textBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.40949535369873D), Telerik.Reporting.Drawing.Unit.Inch(0.22485215961933136D));
+            this.textBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(8.4540739059448242D), Telerik.Reporting.Drawing.Unit.Inch(0.22485215961933136D));
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(2.1199996471405029D), Telerik.Reporting.Drawing.Unit.Inch(0.22011041641235352D));
             this.textBox6.Style.Color = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(47)))), ((int)(((byte)(11)))));
@@ -1197,106 +1323,6 @@ namespace Telerik.Reporting.Examples.CSharp
             this.graphAxis17.Scale = numericalScale11;
             this.graphAxis17.Style.Visible = false;
             // 
-            // graph2
-            // 
-            graphGroup5.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.Quarry_Area"));
-            graphGroup5.Name = "quarry_AreaGroup1";
-            graphGroup5.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.Quarry_Area", Telerik.Reporting.SortDirection.Asc));
-            this.graph2.CategoryGroups.Add(graphGroup5);
-            this.graph2.CoordinateSystems.Add(this.cartesianCoordinateSystem4);
-            this.graph2.DataSource = this.summerytestresultDataSource;
-            this.graph2.Legend.Height = Telerik.Reporting.Drawing.Unit.Mm(35D);
-            this.graph2.Legend.Position = Telerik.Reporting.GraphItemPosition.TopCenter;
-            this.graph2.Legend.Style.Font.Name = "Candara";
-            this.graph2.Legend.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
-            this.graph2.Legend.Style.LineColor = System.Drawing.Color.LightGray;
-            this.graph2.Legend.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
-            this.graph2.Legend.Width = Telerik.Reporting.Drawing.Unit.Mm(50D);
-            this.graph2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0.0010012307902798057D), Telerik.Reporting.Drawing.Unit.Mm(0.0010012307902798057D));
-            this.graph2.Name = "graph2";
-            this.graph2.PlotAreaStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graph2.PlotAreaStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
-            this.graph2.Series.Add(this.lineSeries1);
-            this.graph2.SeriesGroups.Add(graphGroup6);
-            this.graph2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(147.24795532226563D), Telerik.Reporting.Drawing.Unit.Mm(147.31900024414063D));
-            this.graph2.Style.Font.Name = "Candara";
-            this.graph2.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
-            this.graph2.Style.Padding.Bottom = Telerik.Reporting.Drawing.Unit.Pixel(10D);
-            this.graph2.Style.Padding.Left = Telerik.Reporting.Drawing.Unit.Pixel(10D);
-            this.graph2.Style.Padding.Right = Telerik.Reporting.Drawing.Unit.Pixel(10D);
-            this.graph2.Style.Padding.Top = Telerik.Reporting.Drawing.Unit.Pixel(10D);
-            graphTitle2.Height = Telerik.Reporting.Drawing.Unit.Mm(40D);
-            graphTitle2.Position = Telerik.Reporting.GraphItemPosition.TopCenter;
-            graphTitle2.Style.Font.Bold = false;
-            graphTitle2.Style.Font.Name = "Candara";
-            graphTitle2.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(12D);
-            graphTitle2.Style.Font.Underline = true;
-            graphTitle2.Style.LineColor = System.Drawing.Color.LightGray;
-            graphTitle2.Style.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
-            graphTitle2.Text = "CBR";
-            graphTitle2.Width = Telerik.Reporting.Drawing.Unit.Mm(50D);
-            this.graph2.Titles.Add(graphTitle2);
-            // 
-            // cartesianCoordinateSystem4
-            // 
-            this.cartesianCoordinateSystem4.Name = "cartesianCoordinateSystem4";
-            this.cartesianCoordinateSystem4.XAxis = this.graphAxis20;
-            this.cartesianCoordinateSystem4.YAxis = this.graphAxis21;
-            // 
-            // graphAxis20
-            // 
-            this.graphAxis20.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graphAxis20.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.graphAxis20.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graphAxis20.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.graphAxis20.MinorGridLineStyle.Visible = false;
-            this.graphAxis20.Name = "graphAxis20";
-            this.graphAxis20.Scale = numericalScale2;
-            // 
-            // graphAxis21
-            // 
-            this.graphAxis21.MajorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graphAxis21.MajorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.graphAxis21.MinorGridLineStyle.LineColor = System.Drawing.Color.LightGray;
-            this.graphAxis21.MinorGridLineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.graphAxis21.MinorGridLineStyle.Visible = false;
-            this.graphAxis21.Name = "graphAxis21";
-            this.graphAxis21.Scale = categoryScale2;
-            this.graphAxis21.Style.Font.Name = "Candara";
-            this.graphAxis21.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
-            // 
-            // lineSeries1
-            // 
-            this.lineSeries1.ArrangeByAxis = this.graphAxis21;
-            this.lineSeries1.CategoryGroup = graphGroup5;
-            this.lineSeries1.CoordinateSystem = this.cartesianCoordinateSystem4;
-            this.lineSeries1.DataPointLabel = "= Count(Fields.CBR)";
-            this.lineSeries1.DataPointLabelStyle.Visible = false;
-            this.lineSeries1.DataPointStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Inch(0D);
-            this.lineSeries1.DataPointStyle.Visible = false;
-            this.lineSeries1.LegendItem.Value = "= Fields.Quarry_Area";
-            this.lineSeries1.LineStyle.LineWidth = Telerik.Reporting.Drawing.Unit.Pixel(1D);
-            this.lineSeries1.LineStyle.Visible = true;
-            this.lineSeries1.MarkerMaxSize = Telerik.Reporting.Drawing.Unit.Pixel(50D);
-            this.lineSeries1.MarkerMinSize = Telerik.Reporting.Drawing.Unit.Pixel(5D);
-            this.lineSeries1.MarkerSize = Telerik.Reporting.Drawing.Unit.Pixel(5D);
-            graphGroup6.Groupings.Add(new Telerik.Reporting.Grouping("= Fields.CBR"));
-            graphGroup6.Name = "cBRGroup";
-            graphGroup6.Sortings.Add(new Telerik.Reporting.Sorting("= Fields.CBR", Telerik.Reporting.SortDirection.Asc));
-            this.lineSeries1.SeriesGroup = graphGroup6;
-            this.lineSeries1.Size = null;
-            this.lineSeries1.ToolTip.Text = "= Count(Fields.CBR)";
-            this.lineSeries1.ToolTip.Title = "= Fields.CBR";
-            this.lineSeries1.X = "= Count(Fields.CBR)";
-            // 
-            // panel4
-            // 
-            this.panel4.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
-            this.graph2});
-            this.panel4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(0.069052629172801971D), Telerik.Reporting.Drawing.Unit.Mm(279.4000244140625D));
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(147.24894714355469D), Telerik.Reporting.Drawing.Unit.Mm(149.86000061035156D));
-            // 
             // Dashboard
             // 
             this.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
@@ -1500,7 +1526,7 @@ namespace Telerik.Reporting.Examples.CSharp
             styleRule18});
             this.TocText = "Dashboard";
             this.UnitOfMeasure = Telerik.Reporting.Drawing.UnitType.Mm;
-            this.Width = Telerik.Reporting.Drawing.Unit.Inch(10.584917068481445D);
+            this.Width = Telerik.Reporting.Drawing.Unit.Inch(10.629495620727539D);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1595,6 +1621,8 @@ namespace Telerik.Reporting.Examples.CSharp
         private GraphAxis graphAxis21;
         private LineSeries lineSeries1;
         private Reporting.Panel panel4;
+        private Reporting.TextBox textBox19;
+        private Reporting.TextBox textBox22;
         //   private IContainer components;
     }
 }
